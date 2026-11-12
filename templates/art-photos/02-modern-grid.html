@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Grid Expo | Aram Events</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f1f3f5;color:#202b36}
+header{padding:22px 5%;display:flex;justify-content:space-between;align-items:center;background:white;flex-wrap:wrap;gap:15px}
+.logo{font-size:23px;font-weight:900;color:#345d78}
+nav{display:flex;gap:15px;flex-wrap:wrap}
+nav a{color:#253746;text-decoration:none;font-size:13px}
+.hero{margin:25px 5%;padding:65px;background:#d9e8ee;border-radius:25px;display:grid;grid-template-columns:1.3fr .7fr;gap:25px;align-items:center}
+.hero h1{font-size:clamp(40px,6vw,70px);line-height:1.05}
+.hero p{line-height:1.7;margin:18px 0}
+.artbox{height:260px;background:linear-gradient(135deg,#345d78,#a8c7d5);border-radius:20px;display:grid;place-items:center;color:white;font-size:35px;font-weight:bold}
+.btn{display:inline-block;background:#345d78;color:white;padding:13px 22px;border:0;border-radius:8px;text-decoration:none;cursor:pointer}
+section{padding:55px 6%}
+h2{font-size:35px;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;padding:25px;border-radius:15px;box-shadow:0 5px 20px #00000009}
+.card p{color:#66737e;line-height:1.6;margin-top:8px}
+.session{display:grid;grid-template-columns:110px 1fr;background:white;padding:20px;margin:12px 0;border-radius:12px}
+.session p{color:#66737e;margin-top:6px}
+form{display:grid;gap:12px;max-width:520px}
+input,select{padding:14px;border:1px solid #ccd4da;border-radius:8px;font-size:15px}
+footer{background:#203544;color:white;padding:35px 6%;line-height:2}
+footer a{color:white;margin-right:15px}
+@media(max-width:750px){.hero{grid-template-columns:1fr;padding:35px}.grid{grid-template-columns:1fr}.session{grid-template-columns:1fr;gap:8px}header{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+<strong class="logo">ARAM EVENTS</strong>
+<nav>
+<a href="#home">Home</a><a href="#agenda">Agenda</a><a href="#speakers">Speakers</a><a href="#discussions">Discussions</a><a href="#tickets">Tickets</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#exhibitors">Exhibitors</a><a href="#gallery">Gallery</a><a href="#signin">Sign In</a>
+</nav>
+</header>
+
+<main>
+<div class="hero" id="home">
+<div>
+<p>ART & PHOTOS · 2026</p>
+<h1>Art Beyond Boundaries</h1>
+<p>Explore a creative world of photography, digital artwork, illustration and visual storytelling.</p>
+<a class="btn" href="#tickets">Explore Tickets</a>
+</div>
+<div class="artbox">ART EXPO</div>
+</div>
+
+<section><h2>About the Exhibition</h2><div class="grid">
+<div class="card"><h3>Photography</h3><p>Discover stories captured through the camera.</p></div>
+<div class="card"><h3>Digital Art</h3><p>Explore contemporary digital creativity.</p></div>
+<div class="card"><h3>Illustration</h3><p>Experience unique artistic expressions.</p></div>
+</div></section>
+
+<section id="agenda"><h2>Agenda</h2>
+<div class="session"><b>09:00 AM</b><div><h3>Opening Exhibition</h3><p>Explore the selected artworks.</p></div></div>
+<div class="session"><b>11:00 AM</b><div><h3>Photography Masterclass</h3><p>Learn professional photography techniques.</p></div></div>
+<div class="session"><b>01:00 PM</b><div><h3>Digital Art Workshop</h3><p>Discover modern creative tools.</p></div></div>
+<div class="session"><b>03:00 PM</b><div><h3>Artist Networking</h3><p>Meet and connect with artists.</p></div></div>
+<button class="btn" onclick="alert('Connect a calendar integration before publishing.')">Add to Calendar</button>
+<button class="btn" onclick="window.print()">Print Agenda</button>
+</section>
+
+<section id="speakers"><h2>Speakers</h2><div class="grid">
+<div class="card"><h3>Maya Raman</h3><p>Photographer</p></div>
+<div class="card"><h3>Arjun Dev</h3><p>Digital Artist</p></div>
+<div class="card"><h3>Nila Thomas</h3><p>Creative Director</p></div>
+</div></section>
+
+<section id="discussions"><h2>Discussions</h2><div class="card"><h3>Creative Exchange</h3><p>Discuss photography, art techniques and creative ideas with attendees.</p></div></section>
+
+<section id="tickets"><h2>Tickets & Registration</h2><div class="card"><h3>General Pass – Free</h3><p>Exhibition entry and all scheduled sessions.</p></div><br>
+<form onsubmit="event.preventDefault();alert('Demo form. Connect registration backend before publishing.')">
+<input placeholder="Full Name" required><input type="email" placeholder="Email Address" required>
+<input placeholder="Organization"><select><option>General Pass</option><option>Student Pass</option></select>
+<button class="btn">Register Now</button>
+</form></section>
+
+<section id="sponsors"><h2>Sponsors</h2><div class="grid"><div class="card">Creative Partner</div><div class="card">Photography Partner</div><div class="card">Media Partner</div></div></section>
+<section id="venue"><h2>Venue</h2><div class="card"><p>Coimbatore, Tamil Nadu, India</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Coimbatore" target="_blank">View Map</a></div></section>
+<section id="exhibitors"><h2>Exhibitors</h2><div class="grid"><div class="card">Photo Studio</div><div class="card">Digital Art Studio</div><div class="card">Illustration Gallery</div></div></section>
+<section id="gallery"><h2>Gallery</h2><div class="grid"><div class="artbox">01</div><div class="artbox">02</div><div class="artbox">03</div></div></section>
+<section id="signin"><h2>Sign In</h2><form onsubmit="event.preventDefault();alert('Demo sign-in. Connect authentication before publishing.')"><input type="email" placeholder="Email" required><input type="password" placeholder="Password" required><button class="btn">Sign In</button></form></section>
+</main>
+
+<footer>
+<p>© 2026 Aram Events. All rights reserved.</p>
+<a href="#home">Terms & Policies</a><a href="#home">Privacy Policy</a><a href="#home">Social Handles</a>
+</footer>
+</body>
+</html>

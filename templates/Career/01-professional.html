@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Connect | Aram Events</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#eef3f8;color:#18324a}
+header{padding:22px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;background:white}
+.logo{font-size:22px;font-weight:bold;color:#1768ac}
+nav a{margin:8px;color:#18324a;text-decoration:none;font-size:13px}
+.hero{padding:90px 9%;background:#dce8f3;border-left:10px solid #1768ac}
+h1{font-size:65px;line-height:1.05}
+.hero p{max-width:600px;font-size:18px}
+.btn{display:inline-block;background:#1768ac;color:white;padding:14px 24px;text-decoration:none;border:0;cursor:pointer}
+section{padding:55px 9%}
+h2{font-size:34px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:25px;border-radius:8px}
+.session{padding:17px;border-bottom:1px solid #ccd7e0}
+form{display:grid;gap:12px;max-width:450px}
+input,select{padding:13px;border:1px solid #bbcbd7}
+footer{background:#18324a;color:white;padding:30px;text-align:center}
+@media(max-width:700px){.grid{grid-template-columns:1fr}h1{font-size:43px}header{gap:15px}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">ARAM EVENTS</div>
+<nav>
+<a href="#home">Home</a><a href="#agenda">Agenda</a><a href="#speakers">Speakers</a><a href="#discussions">Discussions</a><a href="#tickets">Tickets</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#exhibitors">Exhibitors</a><a href="#gallery">Gallery</a><a href="#signin">Sign In</a>
+</nav>
+</header>
+<div class="hero" id="home">
+<p>CAREER GROWTH · LEADERSHIP · OPPORTUNITY</p>
+<h1>Build Your<br>Next Chapter.</h1>
+<p>Meet industry leaders, discover new career paths and gain practical insights to move your professional journey forward.</p>
+<a class="btn" href="#tickets">Register Now</a>
+<p>12 December 2026 | 9 AM – 5 PM | Coimbatore</p>
+</div>
+<section><h2>About the Event</h2><p>Career Connect brings students and professionals together to explore career opportunities, develop skills and build meaningful connections.</p></section>
+<section id="agenda"><h2>Event Agenda</h2>
+<div class="session">09:00 AM – Welcome & Opening</div>
+<div class="session">10:00 AM – Industry Skills Workshop</div>
+<div class="session">11:30 AM – Career Success Panel</div>
+<div class="session">01:30 PM – Networking Session</div>
+<div class="session">03:00 PM – Resume & Interview Workshop</div>
+<p><button class="btn" onclick="alert('Connect calendar integration before publishing.')">Add to Calendar</button> <button class="btn" onclick="window.print()">Print Agenda</button></p>
+</section>
+<section id="speakers"><h2>Speakers</h2><div class="grid">
+<div class="card"><h3>Ananya Menon</h3><p>Talent Acquisition Lead</p></div>
+<div class="card"><h3>Rahul Krishnan</h3><p>Product Manager</p></div>
+<div class="card"><h3>Sanjana Prabhu</h3><p>Career Coach</p></div>
+</div></section>
+<section id="discussions"><h2>Discussions</h2><div class="grid">
+<div class="card">Careers in Technology</div><div class="card">Starting Your Career</div><div class="card">Leadership Development</div>
+</div></section>
+<section id="tickets"><h2>Tickets & Registration</h2><div class="grid">
+<div class="card"><h3>Student Pass</h3><p>Free</p></div><div class="card"><h3>Professional Pass</h3><p>₹299</p></div><div class="card"><h3>VIP Pass</h3><p>₹599</p></div>
+</div>
+<form onsubmit="event.preventDefault();alert('Demo registration only. Connect your backend before publishing.')">
+<input placeholder="Full Name" required><input type="email" placeholder="Email Address" required>
+<select><option>Student Pass</option><option>Professional Pass</option><option>VIP Pass</option></select>
+<button class="btn">Register</button></form></section>
+<section id="sponsors"><h2>Our Sponsors</h2><div class="grid"><div class="card">Career Partner</div><div class="card">Technology Partner</div><div class="card">Learning Partner</div></div></section>
+<section id="venue"><h2>Venue</h2><p>Coimbatore, Tamil Nadu, India</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Coimbatore" target="_blank">View Location</a></section>
+<section id="exhibitors"><h2>Career Booths</h2><div class="grid"><div class="card">Technology Employers</div><div class="card">Higher Education</div><div class="card">Career Development</div></div></section>
+<section id="gallery"><h2>Gallery</h2><div class="grid"><div class="card">Career Talks</div><div class="card">Networking</div><div class="card">Workshops</div></div></section>
+<section id="signin"><h2>Attendee Sign In</h2><form onsubmit="event.preventDefault();alert('Demo sign-in only.')"><input type="email" placeholder="Email" required><input type="password" placeholder="Password" required><button class="btn">Sign In</button></form></section>
+<footer>© 2026 Aram Events | Terms & Policies | Privacy Policy</footer>
+</body>
+</html>

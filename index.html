@@ -1,0 +1,832 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aram Events | Template Studio</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #5146e5;
+    --primary-light: #efedff;
+    --dark: #20243a;
+    --text: #34394b;
+    --muted: #85899a;
+    --border: #e8e9ef;
+    --background: #f7f8fc;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+/* TOP HEADER */
+
+header {
+    height: 68px;
+    background: white;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.brand {
+    font-size: 21px;
+    font-weight: 800;
+    color: var(--dark);
+}
+
+.brand span {
+    color: var(--primary);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: #555b6c;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.create-btn {
+    background: var(--primary);
+    color: white !important;
+    padding: 11px 18px;
+    border-radius: 7px;
+}
+
+/* MAIN LAYOUT */
+
+.layout {
+    display: flex;
+    min-height: calc(100vh - 68px);
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 235px;
+    background: white;
+    border-right: 1px solid var(--border);
+    padding: 28px 17px;
+    flex-shrink: 0;
+}
+
+.sidebar-heading {
+    color: #a0a3af;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 12px;
+    margin: 15px 0;
+}
+
+.side-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 12px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #656b7b;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.side-link:hover,
+.side-link.active {
+    background: var(--primary-light);
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.side-icon {
+    font-size: 17px;
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar-note {
+    margin-top: 40px;
+    padding: 17px;
+    background: #f5f4ff;
+    border-radius: 10px;
+}
+
+.sidebar-note h4 {
+    margin: 0 0 8px;
+    font-size: 13px;
+}
+
+.sidebar-note p {
+    margin: 0;
+    color: #85899a;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+/* MAIN CONTENT */
+
+.main {
+    flex: 1;
+    min-width: 0;
+    padding: 35px 4%;
+}
+
+.breadcrumb {
+    color: #989cac;
+    font-size: 12px;
+    margin-bottom: 22px;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.welcome h1 {
+    font-size: 27px;
+    color: var(--dark);
+    margin: 0 0 9px;
+}
+
+.welcome p {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.welcome-btn {
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    padding: 13px 19px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* SEARCH */
+
+.search-area {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 17px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    flex: 1;
+    position: relative;
+}
+
+.search-box span {
+    position: absolute;
+    left: 13px;
+    top: 12px;
+    color: #999;
+}
+
+.search-box input {
+    width: 100%;
+    height: 42px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    outline: none;
+    padding: 0 15px 0 40px;
+    font-size: 13px;
+}
+
+.search-box input:focus {
+    border-color: var(--primary);
+}
+
+.search-area button {
+    border: none;
+    background: var(--primary);
+    color: white;
+    border-radius: 7px;
+    padding: 0 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* STATISTICS */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+    margin-bottom: 32px;
+}
+
+.stat-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.stat-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-icon {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    background: var(--primary-light);
+    border-radius: 9px;
+    font-size: 19px;
+}
+
+.stat-card h2 {
+    margin: 15px 0 5px;
+    font-size: 26px;
+    color: var(--dark);
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* CATEGORY SECTION */
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.section-header h2 {
+    margin: 0 0 6px;
+    font-size: 19px;
+    color: var(--dark);
+}
+
+.section-header p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.section-header a {
+    color: var(--primary);
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 19px;
+}
+
+.category-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 25px rgba(25, 30, 60, .08);
+}
+
+.category-banner {
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-banner .symbol {
+    font-size: 48px;
+    position: relative;
+    z-index: 1;
+}
+
+.category-banner::before,
+.category-banner::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,.13);
+}
+
+.category-banner::before {
+    width: 160px;
+    height: 160px;
+    top: -75px;
+    left: -30px;
+}
+
+.category-banner::after {
+    width: 120px;
+    height: 120px;
+    bottom: -70px;
+    right: -15px;
+}
+
+.art {
+    background: linear-gradient(135deg, #df9bc2, #75458c);
+}
+
+.automotive {
+    background: linear-gradient(135deg, #20283b, #c34d45);
+}
+
+.business {
+    background: linear-gradient(135deg, #344e70, #7796c2);
+}
+
+.career {
+    background: linear-gradient(135deg, #247c78, #173b58);
+}
+
+.analytics {
+    background: linear-gradient(135deg, #20243a, #168baf);
+}
+
+.category-content {
+    padding: 19px;
+}
+
+.category-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.category-content h3 {
+    font-size: 16px;
+    margin: 0;
+    color: var(--dark);
+}
+
+.count {
+    font-size: 10px;
+    color: var(--primary);
+    background: var(--primary-light);
+    padding: 6px 9px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.category-content p {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.7;
+    min-height: 42px;
+    margin: 12px 0 15px;
+}
+
+.explore-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: bold;
+    border-top: 1px solid #f0f0f3;
+    padding-top: 14px;
+}
+
+/* NO RESULTS */
+
+.no-results {
+    display: none;
+    padding: 35px;
+    background: white;
+    border-radius: 10px;
+    color: var(--muted);
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 45px;
+    padding: 20px;
+    text-align: center;
+    color: #999eae;
+    font-size: 11px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1050px) {
+    .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media(max-width:750px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        padding: 25px 18px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:550px) {
+    header {
+        padding: 0 15px;
+    }
+
+    .header-right a:not(.create-btn) {
+        display: none;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome h1 {
+        font-size: 23px;
+    }
+
+    .search-area {
+        padding: 10px;
+    }
+
+    .search-area button {
+        padding: 0 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="brand">ARAM <span>EVENTS</span></div>
+
+    <nav class="header-right">
+        <a href="index.html">Home</a>
+        <a href="#categories">Templates</a>
+        <a href="templates/event-builder/create-event.html"
+           class="create-btn">+ Create Event</a>
+    </nav>
+</header>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-heading">Workspace</div>
+
+        <a href="index.html" class="side-link active">
+            <span class="side-icon">⌂</span>
+            Dashboard
+        </a>
+
+        <a href="#categories" class="side-link">
+            <span class="side-icon">▦</span>
+            Template Gallery
+        </a>
+
+        <a href="templates/event-builder/create-event.html"
+           class="side-link">
+            <span class="side-icon">＋</span>
+            Create Event
+        </a>
+
+        <div class="sidebar-heading">Categories</div>
+
+        <a href="templates/art-photos/index.html" class="side-link">
+            <span class="side-icon">🎨</span>
+            Art & Photos
+        </a>
+
+        <a href="templates/automotive/index.html" class="side-link">
+            <span class="side-icon">🚘</span>
+            Automotive
+        </a>
+
+        <a href="templates/business/index.html" class="side-link">
+            <span class="side-icon">💼</span>
+            Business
+        </a>
+
+        <a href="templates/Career/index.html" class="side-link">
+            <span class="side-icon">🎓</span>
+            Career
+        </a>
+
+        <a href="templates/data-analytics/index.html" class="side-link">
+            <span class="side-icon">📊</span>
+            Data Analytics
+        </a>
+
+        <div class="sidebar-note">
+            <h4>Build your next event</h4>
+            <p>Choose a template, customize your event details and create your event website.</p>
+        </div>
+
+    </aside>
+
+    <main class="main">
+
+        <div class="breadcrumb">
+            Workspace / Dashboard
+        </div>
+
+        <section class="welcome">
+            <div>
+                <h1>Welcome to Aram Events 👋</h1>
+                <p>
+                    Discover professional event templates and create
+                    beautiful event websites in one place.
+                </p>
+            </div>
+
+            <a href="templates/event-builder/create-event.html"
+               class="welcome-btn">
+                + Create New Event
+            </a>
+        </section>
+
+        <section class="search-area">
+            <div class="search-box">
+                <span>⌕</span>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search event categories..."
+                >
+            </div>
+
+            <button onclick="searchCategories()">Search</button>
+        </section>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <span>Template Categories</span>
+                    <span class="stat-icon">▦</span>
+                </div>
+                <h2>05</h2>
+                <p>Available categories</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <span>Website Templates</span>
+                    <span class="stat-icon">▣</span>
+                </div>
+                <h2>25</h2>
+                <p>Five designs in each category</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <span>Event Builder</span>
+                    <span class="stat-icon">✦</span>
+                </div>
+                <h2>01</h2>
+                <p>Customize your event website</p>
+            </div>
+
+        </section>
+
+        <section id="categories">
+
+            <div class="section-header">
+                <div>
+                    <h2>Explore Template Categories</h2>
+                    <p>Select a category to view its five unique designs.</p>
+                </div>
+
+                <a href="#categories">View All Categories →</a>
+            </div>
+
+            <div class="category-grid" id="categoryGrid">
+
+                <article class="category-card"
+                         data-search="art photos creative photography exhibition">
+
+                    <div class="category-banner art">
+                        <span class="symbol">🎨</span>
+                    </div>
+
+                    <div class="category-content">
+                        <div class="category-title-row">
+                            <h3>Art & Photos</h3>
+                            <span class="count">5 Templates</span>
+                        </div>
+
+                        <p>
+                            Creative designs for art exhibitions,
+                            photography events and showcases.
+                        </p>
+
+                        <a href="templates/art-photos/index.html"
+                           class="explore-link">
+                            Explore Templates <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="category-card"
+                         data-search="automotive cars automobile vehicle motor">
+
+                    <div class="category-banner automotive">
+                        <span class="symbol">🚘</span>
+                    </div>
+
+                    <div class="category-content">
+                        <div class="category-title-row">
+                            <h3>Automotive</h3>
+                            <span class="count">5 Templates</span>
+                        </div>
+
+                        <p>
+                            Modern designs for automobile exhibitions,
+                            car launches and motor shows.
+                        </p>
+
+                        <a href="templates/automotive/index.html"
+                           class="explore-link">
+                            Explore Templates <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="category-card"
+                         data-search="business corporate conference meeting">
+
+                    <div class="category-banner business">
+                        <span class="symbol">💼</span>
+                    </div>
+
+                    <div class="category-content">
+                        <div class="category-title-row">
+                            <h3>Business</h3>
+                            <span class="count">5 Templates</span>
+                        </div>
+
+                        <p>
+                            Professional designs for conferences,
+                            corporate meetings and networking events.
+                        </p>
+
+                        <a href="templates/business/index.html"
+                           class="explore-link">
+                            Explore Templates <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="category-card"
+                         data-search="career jobs recruitment professional">
+
+                    <div class="category-banner career">
+                        <span class="symbol">🎓</span>
+                    </div>
+
+                    <div class="category-content">
+                        <div class="category-title-row">
+                            <h3>Career</h3>
+                            <span class="count">5 Templates</span>
+                        </div>
+
+                        <p>
+                            Professional templates for job fairs,
+                            career guidance and recruitment events.
+                        </p>
+
+                        <a href="templates/Career/index.html"
+                           class="explore-link">
+                            Explore Templates <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="category-card"
+                         data-search="data analytics technology artificial intelligence AI">
+
+                    <div class="category-banner analytics">
+                        <span class="symbol">📊</span>
+                    </div>
+
+                    <div class="category-content">
+                        <div class="category-title-row">
+                            <h3>Data Analytics</h3>
+                            <span class="count">5 Templates</span>
+                        </div>
+
+                        <p>
+                            Technology-focused designs for data summits,
+                            analytics conferences and AI events.
+                        </p>
+
+                        <a href="templates/data-analytics/index.html"
+                           class="explore-link">
+                            Explore Templates <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <div class="no-results" id="noResults">
+                    No matching categories found.
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            © 2026 Aram Events. All rights reserved.
+        </footer>
+
+    </main>
+</div>
+
+<script>
+const searchInput = document.getElementById("searchInput");
+const cards = document.querySelectorAll(".category-card");
+const noResults = document.getElementById("noResults");
+
+function searchCategories() {
+
+    const searchValue = searchInput.value
+        .toLowerCase()
+        .trim();
+
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+
+        const keywords = card.dataset.search.toLowerCase();
+
+        const matches = keywords.includes(searchValue);
+
+        card.style.display = matches ? "" : "none";
+
+        if (matches) {
+            visibleCount++;
+        }
+    });
+
+    noResults.style.display =
+        visibleCount === 0 ? "block" : "none";
+}
+
+searchInput.addEventListener("input", searchCategories);
+</script>
+
+</body>
+</html>

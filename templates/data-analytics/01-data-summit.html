@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Summit | Aram Events</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;color:#173653;background:#edf4fb}
+header{background:white;padding:22px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.logo{font-size:22px;font-weight:bold;color:#1769aa}
+nav{display:flex;gap:14px;flex-wrap:wrap}
+nav a{font-size:12px;text-decoration:none;color:#173653}
+.hero{padding:100px 10%;background:linear-gradient(120deg,#d8e8f7,#edf4fb)}
+.hero h1{font-size:70px;line-height:1.05;margin:20px 0}
+.hero p{max-width:650px;font-size:18px}
+.btn{display:inline-block;padding:14px 24px;background:#1769aa;color:white;text-decoration:none;border:0;cursor:pointer;margin:10px 5px 10px 0}
+section{padding:55px 9%}
+h2{font-size:34px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:25px;border-radius:10px;border:1px solid #dce5ed}
+.session{padding:18px;border-bottom:1px solid #cbd9e5}
+form{display:grid;gap:12px;max-width:450px}
+input,select{padding:14px;border:1px solid #bccbd8}
+footer{background:#173653;color:white;padding:30px;text-align:center}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.hero h1{font-size:45px}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">ARAM EVENTS</div>
+<nav>
+<a href="#home">Home</a><a href="#agenda">Agenda</a><a href="#speakers">Speakers</a><a href="#discussions">Discussions</a><a href="#tickets">Tickets</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#exhibitors">Exhibitors</a><a href="#gallery">Gallery</a><a href="#signin">Sign In</a>
+</nav>
+</header>
+<div class="hero" id="home">
+<p>DATA · INSIGHTS · DECISIONS</p>
+<h1>Turn Data Into<br>Direction.</h1>
+<p>A gathering for data professionals, analysts and curious minds to explore the ideas shaping tomorrow.</p>
+<a class="btn" href="#tickets">Register Now</a>
+<p>12 December 2026 | 9:00 AM – 5:00 PM | Coimbatore</p>
+</div>
+<section id="about"><h2>About the Event</h2><p>Explore how data, analytics and responsible AI can turn information into better decisions. Learn from practitioners, exchange ideas and discover practical approaches for real-world challenges.</p></section>
+<section id="agenda"><h2>Event Agenda</h2>
+<div class="session">09:00 AM – Opening & Welcome</div>
+<div class="session">10:00 AM – From Data to Decisions</div>
+<div class="session">11:30 AM – Analytics in Practice</div>
+<div class="session">01:30 PM – AI, Ethics & Trust</div>
+<div class="session">03:00 PM – Hands-on Data Workshop</div>
+<button class="btn" onclick="alert('Connect calendar integration before publishing.')">Add to Calendar</button>
+<button class="btn" onclick="window.print()">Print Agenda</button>
+</section>
+<section id="speakers"><h2>Speakers</h2><div class="grid">
+<div class="card"><h3>Ananya Menon</h3><p>Data Science Lead</p></div>
+<div class="card"><h3>Rahul Krishnan</h3><p>Analytics Consultant</p></div>
+<div class="card"><h3>Sanjana Prabhu</h3><p>AI Researcher</p></div>
+</div></section>
+<section id="discussions"><h2>Discussion Tracks</h2><div class="grid">
+<div class="card"><h3>Data Engineering</h3><p>Data quality and scalable platforms.</p></div>
+<div class="card"><h3>Business Intelligence</h3><p>Dashboards and decision-making.</p></div>
+<div class="card"><h3>Applied AI</h3><p>Machine learning and responsible AI.</p></div>
+</div></section>
+<section id="tickets"><h2>Tickets & Registration</h2><div class="grid">
+<div class="card"><h3>Student Pass</h3><p>Free</p></div>
+<div class="card"><h3>Professional Pass</h3><p>₹299</p></div>
+<div class="card"><h3>Workshop Pass</h3><p>₹499</p></div>
+</div>
+<form onsubmit="event.preventDefault();alert('Demo registration only. Connect your backend before publishing.')">
+<input required placeholder="Full Name"><input type="email" required placeholder="Email Address">
+<select><option>Student Pass</option><option>Professional Pass</option><option>Workshop Pass</option></select>
+<button class="btn">Register Now</button>
+</form></section>
+<section id="sponsors"><h2>Our Partners</h2><div class="grid"><div class="card">Technology Partner</div><div class="card">Knowledge Partner</div><div class="card">Community Partner</div></div></section>
+<section id="venue"><h2>Venue</h2><p>Coimbatore, Tamil Nadu, India</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Coimbatore">View Location</a></section>
+<section id="exhibitors"><h2>Technology Showcase</h2><div class="grid"><div class="card">Analytics Platforms</div><div class="card">AI & ML Solutions</div><div class="card">Data Engineering Tools</div></div></section>
+<section id="gallery"><h2>Event Gallery</h2><div class="grid"><div class="card">DISCOVER</div><div class="card">ANALYZE</div><div class="card">INNOVATE</div></div></section>
+<section id="signin"><h2>Attendee Sign In</h2><form onsubmit="event.preventDefault();alert('Demo sign-in only.')"><input type="email" required placeholder="Email"><input type="password" required placeholder="Password"><button class="btn">Sign In</button></form></section>
+<footer>© 2026 Aram Events | Terms & Policies | Privacy Policy</footer>
+</body>
+</html>

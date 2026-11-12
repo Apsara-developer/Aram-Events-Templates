@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Career Launch Fest | Aram Events</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#fff4e9;color:#34251e;font-family:Arial}
+header{padding:22px 6%;display:flex;justify-content:space-between;flex-wrap:wrap;background:#fff}
+.logo{font-size:22px;font-weight:bold;color:#e65b35}
+nav a{margin:7px;text-decoration:none;color:#34251e;font-size:12px}
+.hero{margin:25px 5%;padding:80px 8%;background:#ffdfc4;border-radius:30px}
+h1{font-size:75px;line-height:.98;color:#e65b35}
+.btn{background:#e65b35;color:white;padding:15px 24px;text-decoration:none;border:0;cursor:pointer}
+section{padding:55px 8%}h2{font-size:35px;color:#e65b35}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:25px;border-radius:20px;box-shadow:0 6px 20px #e65b3515}
+.session{padding:17px;background:white;margin:12px 0;border-radius:12px}
+form{display:grid;gap:12px;max-width:450px}
+input,select{padding:14px;border:1px solid #e4c5b2;border-radius:8px}
+footer{background:#34251e;color:white;padding:30px;text-align:center}
+@media(max-width:700px){.grid{grid-template-columns:1fr}h1{font-size:48px}}
+</style>
+</head>
+<body>
+<header><div class="logo">ARAM EVENTS</div><nav>
+<a href="#home">Home</a><a href="#agenda">Agenda</a><a href="#speakers">Speakers</a><a href="#discussions">Discussions</a><a href="#tickets">Tickets</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#exhibitors">Exhibitors</a><a href="#gallery">Gallery</a><a href="#signin">Sign In</a>
+</nav></header>
+<div class="hero" id="home"><p>JOB FAIR · PORTFOLIOS · NEW POSSIBILITIES</p>
+<h1>Make Your<br>Move!</h1>
+<p>Meet hiring teams, showcase your strengths and explore exciting opportunities across creative and technology industries.</p>
+<a class="btn" href="#tickets">Find Your Opportunity</a><p>12 December 2026 | Coimbatore</p></div>
+<section><h2>About the Fest</h2><p>A lively career event connecting job seekers, recruiters, students and creative professionals through hiring conversations and practical sessions.</p></section>
+<section id="agenda"><h2>What's Happening?</h2><div class="session">09:00 AM — Opening & Job Fair</div><div class="session">10:00 AM — Portfolio Showcase</div><div class="session">11:30 AM — Recruiter Q&A</div><div class="session">01:30 PM — Career Networking</div><div class="session">03:00 PM — Interview Practice</div>
+<button class="btn" onclick="alert('Connect calendar integration before publishing.')">Add to Calendar</button> <button class="btn" onclick="window.print()">Print Agenda</button></section>
+<section id="speakers"><h2>Meet the Experts</h2><div class="grid"><div class="card"><h3>Riya Thomas</h3><p>Recruitment Specialist</p></div><div class="card"><h3>Adithya Kumar</h3><p>Creative Director</p></div><div class="card"><h3>Farah Ali</h3><p>Career Mentor</p></div></div></section>
+<section id="discussions"><h2>Open Conversations</h2><div class="grid"><div class="card">Getting Your First Job</div><div class="card">Portfolio Reviews</div><div class="card">Freelance & Startup Careers</div></div></section>
+<section id="tickets"><h2>Choose Your Pass</h2><div class="grid"><div class="card">Student — Free</div><div class="card">Job Seeker — ₹199</div><div class="card">VIP — ₹499</div></div>
+<form onsubmit="event.preventDefault();alert('Demo registration only. Connect your backend before publishing.')"><input required placeholder="Full Name"><input required type="email" placeholder="Email"><select><option>Student Pass</option><option>Job Seeker Pass</option><option>VIP Pass</option></select><button class="btn">I'm Interested!</button></form></section>
+<section id="sponsors"><h2>Our Partners</h2><div class="grid"><div class="card">Hiring Partner</div><div class="card">Education Partner</div><div class="card">Community Partner</div></div></section>
+<section id="venue"><h2>Come Join Us</h2><p>Coimbatore, Tamil Nadu, India</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Coimbatore">Find the Venue</a></section>
+<section id="exhibitors"><h2>Explore Career Zones</h2><div class="grid"><div class="card">Technology Jobs</div><div class="card">Creative Careers</div><div class="card">Startup Zone</div></div></section>
+<section id="gallery"><h2>Fest Highlights</h2><div class="grid"><div class="card">Meet Recruiters</div><div class="card">Show Your Work</div><div class="card">Make Connections</div></div></section>
+<section id="signin"><h2>Attendee Sign In</h2><form onsubmit="event.preventDefault();alert('Demo sign-in only.')"><input type="email" required placeholder="Email"><input type="password" required placeholder="Password"><button class="btn">Sign In</button></form></section>
+<footer>© 2026 Aram Events | Terms & Policies | Privacy Policy</footer>
+</body></html>

@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Creative Explosion | Aram Events</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#fff7e9;color:#25201c}
+header{padding:22px 5%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.logo{font-weight:1000;font-size:23px}
+nav{display:flex;gap:13px;flex-wrap:wrap}
+nav a{color:#25201c;text-decoration:none;font-size:13px;font-weight:bold}
+.hero{background:#f05b43;color:white;padding:85px 7%;position:relative;overflow:hidden}
+.hero:after{content:"ART!";position:absolute;right:3%;bottom:-45px;font-size:clamp(100px,20vw,240px);font-weight:1000;color:#ffffff22}
+.tag{font-weight:bold;letter-spacing:3px}
+h1{font-size:clamp(55px,10vw,115px);line-height:.88;margin:25px 0;text-transform:uppercase;font-weight:1000}
+.hero p{max-width:650px;line-height:1.7}
+.btn{display:inline-block;padding:15px 23px;background:#24201d;color:white;text-decoration:none;border:0;margin-top:20px;font-weight:bold;cursor:pointer}
+section{padding:60px 7%}
+h2{font-size:42px;margin-bottom:25px;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{padding:27px;background:#ffe0a6;border-radius:4px}
+.card:nth-child(2){background:#c6e8dc}
+.card:nth-child(3){background:#d9d0fa}
+.card p{line-height:1.6;margin-top:9px}
+.session{display:flex;gap:25px;padding:20px 0;border-bottom:2px solid #25201c}
+.session b{min-width:95px;color:#e14e39}
+.session p{margin-top:7px;color:#655e57}
+form{display:grid;gap:13px;max-width:520px}
+input,select{padding:14px;border:2px solid #25201c;background:white}
+footer{background:#25201c;color:white;padding:35px 7%}
+footer a{color:#ffd18b;margin-right:15px}
+@media(max-width:750px){.grid{grid-template-columns:1fr}header{flex-direction:column}.session{flex-direction:column;gap:7px}}
+</style>
+</head>
+<body>
+<header><strong class="logo">ARAM EVENTS ✳</strong><nav>
+<a href="#home">Home</a><a href="#agenda">Agenda</a><a href="#speakers">Speakers</a><a href="#discussions">Discussions</a><a href="#tickets">Tickets</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#exhibitors">Exhibitors</a><a href="#gallery">Gallery</a><a href="#signin">Sign In</a>
+</nav></header>
+
+<main>
+<div class="hero" id="home"><div class="tag">ART · PHOTOGRAPHY · CREATIVITY</div>
+<h1>Make<br>Some<br>Art!</h1>
+<p>A vibrant festival celebrating bold ideas, photography, illustration and the power of creative expression.</p>
+<a class="btn" href="#tickets">GET YOUR PASS</a>
+<p style="margin-top:25px">12 DECEMBER 2026 · COIMBATORE, INDIA</p></div>
+
+<section><h2>What's Happening?</h2><div class="grid">
+<div class="card"><h3>PHOTO ZONE</h3><p>Explore creative photography and visual storytelling.</p></div>
+<div class="card"><h3>ART LAB</h3><p>Take part in interactive creative workshops.</p></div>
+<div class="card"><h3>LIVE STAGE</h3><p>Watch artists demonstrate their techniques.</p></div>
+</div></section>
+
+<section id="agenda"><h2>Today's Line-up</h2>
+<div class="session"><b>09:00 AM</b><div><h3>Festival Kick-off</h3><p>Welcome and exhibition opening.</p></div></div>
+<div class="session"><b>11:00 AM</b><div><h3>Photo Challenge</h3><p>A creative photography experience.</p></div></div>
+<div class="session"><b>01:00 PM</b><div><h3>Art Workshop</h3><p>Hands-on illustration and design.</p></div></div>
+<div class="session"><b>03:00 PM</b><div><h3>Creative Showcase</h3><p>Final artwork presentations.</p></div></div>
+<button class="btn" onclick="alert('Connect a calendar integration before publishing.')">Add to Calendar</button>
+<button class="btn" onclick="window.print()">Print Agenda</button>
+</section>
+
+<section id="speakers"><h2>Meet the Creators</h2><div class="grid">
+<div class="card"><h3>Maya Raman</h3><p>Photographer</p></div>
+<div class="card"><h3>Arjun Dev</h3><p>Illustrator</p></div>
+<div class="card"><h3>Nila Thomas</h3><p>Art Director</p></div>
+</div></section>
+
+<section id="discussions"><h2>Talk It Out</h2><div class="card"><h3>Creative Minds Meet</h3><p>Share ideas, discuss art and connect with fellow creators.</p></div></section>
+
+<section id="tickets"><h2>Get Your Ticket</h2><div class="card"><h3>Festival Pass – Free</h3><p>Exhibition access, workshops and networking.</p></div><br>
+<form onsubmit="event.preventDefault();alert('Demo registration. Connect backend before publishing.')">
+<input placeholder="Your Name" required><input type="email" placeholder="Your Email" required><input placeholder="Organization">
+<select><option>Festival Pass</option><option>Student Pass</option></select><button class="btn">BOOK NOW</button>
+</form></section>
+
+<section id="sponsors"><h2>Powered By</h2><div class="grid"><div class="card">Creative Partner</div><div class="card">Media Partner</div><div class="card">Community Partner</div></div></section>
+<section id="venue"><h2>Where?</h2><div class="card"><p>Coimbatore, Tamil Nadu, India</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Coimbatore" target="_blank">FIND THE VENUE</a></div></section>
+<section id="exhibitors"><h2>Creative Booths</h2><div class="grid"><div class="card">Photo Booth</div><div class="card">Digital Art</div><div class="card">Illustration</div></div></section>
+<section id="gallery"><h2>See the Vibe</h2><div class="grid"><div class="card">ART 01</div><div class="card">ART 02</div><div class="card">ART 03</div></div></section>
+<section id="signin"><h2>Attendee Sign In</h2><form onsubmit="event.preventDefault();alert('Demo sign-in. Connect authentication before publishing.')"><input type="email" placeholder="Email" required><input type="password" placeholder="Password" required><button class="btn">SIGN IN</button></form></section>
+</main>
+<footer><p>© 2026 Aram Events. All rights reserved.</p><br><a href="#home">Terms & Policies</a><a href="#home">Privacy Policy</a><a href="#home">Social Handles</a></footer>
+</body>
+</html>

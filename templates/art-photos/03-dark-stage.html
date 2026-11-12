@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Stage | Aram Events</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ font-family:Arial,sans-serif;
+ background:#090909;
+ color:#f5f1eb;
+}
+a{text-decoration:none;color:inherit}
+
+nav{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:22px 7%;
+ background:#111;
+ border-bottom:1px solid #292929;
+}
+.logo{font-size:23px;font-weight:bold;color:#e9b56d}
+.navlinks{display:flex;gap:24px;flex-wrap:wrap}
+.navlinks a{font-size:13px;color:#ccc}
+.navlinks a:hover{color:#e9b56d}
+
+.hero{
+ min-height:620px;
+ display:flex;
+ align-items:center;
+ padding:90px 9%;
+ background:
+ radial-gradient(ellipse at 75% 45%,#56321f 0%,transparent 40%),
+ linear-gradient(110deg,#101010,#1b1713);
+}
+.hero-content{max-width:800px}
+.tag{
+ color:#e9b56d;
+ letter-spacing:5px;
+ font-size:12px;
+ font-weight:bold;
+}
+.hero h1{
+ font-size:clamp(55px,9vw,110px);
+ line-height:.98;
+ margin:28px 0;
+ font-family:Georgia,serif;
+}
+.hero h1 span{color:#e9b56d}
+.hero p{
+ max-width:600px;
+ color:#c4bdb3;
+ line-height:1.9;
+ font-size:16px;
+}
+.details{
+ display:flex;
+ gap:35px;
+ flex-wrap:wrap;
+ margin-top:30px;
+ color:#e9b56d;
+ font-size:14px;
+}
+.btn{
+ display:inline-block;
+ margin-top:35px;
+ padding:16px 30px;
+ background:#e9b56d;
+ color:#17120b;
+ font-weight:bold;
+}
+.btn:hover{background:white}
+
+section{padding:85px 9%}
+.eyebrow{
+ color:#e9b56d;
+ letter-spacing:4px;
+ font-size:11px;
+ font-weight:bold;
+}
+.title{
+ font:clamp(32px,5vw,48px) Georgia,serif;
+ margin:18px 0;
+}
+.description{
+ color:#aaa;
+ line-height:1.9;
+ max-width:700px;
+}
+.about{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:50px;
+ align-items:center;
+}
+.art-visual{
+ min-height:350px;
+ background:linear-gradient(145deg,#38251b,#b47b48,#211712);
+ display:grid;
+ place-items:center;
+ font:italic 65px Georgia;
+ color:#fff0d8;
+ text-align:center;
+ padding:25px;
+}
+.agenda{background:#141414}
+.agenda-list{margin-top:35px}
+.agenda-item{
+ display:grid;
+ grid-template-columns:150px 1fr;
+ gap:25px;
+ padding:25px 0;
+ border-bottom:1px solid #393939;
+}
+.agenda-item time{color:#e9b56d;font-weight:bold}
+.agenda-item p{color:#999;margin-top:8px;font-size:14px}
+
+.speakers-grid{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:22px;
+ margin-top:35px;
+}
+.speaker{
+ background:#171717;
+ border:1px solid #303030;
+ padding:25px;
+}
+.speaker-img{
+ height:190px;
+ background:linear-gradient(135deg,#49362b,#a7794d);
+ display:grid;
+ place-items:center;
+ font:45px Georgia;
+ color:#f2d4a7;
+}
+.speaker h3{margin-top:20px}
+.speaker p{color:#999;margin-top:8px;font-size:13px}
+
+.tickets{
+ background:linear-gradient(120deg,#24180f,#14100c);
+ text-align:center;
+}
+.ticket-card{
+ background:#f4eee5;
+ color:#21170e;
+ max-width:430px;
+ padding:40px;
+ margin:35px auto 0;
+ border-radius:5px;
+}
+.ticket-card h3{font:30px Georgia}
+.price{font-size:43px;font-weight:bold;margin:20px}
+.ticket-card p{color:#66584b;line-height:1.8}
+.ticket-card button{
+ background:#17120e;
+ color:white;
+ border:0;
+ padding:15px 30px;
+ margin-top:20px;
+ cursor:pointer;
+}
+
+.gallery-grid{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:14px;
+ margin-top:30px;
+}
+.gallery-grid div{
+ height:190px;
+ background:linear-gradient(135deg,#563c2d,#bd8958);
+}
+.gallery-grid div:nth-child(2){background:linear-gradient(135deg,#1e3430,#739187)}
+.gallery-grid div:nth-child(3){background:linear-gradient(135deg,#4c354d,#a47b9c)}
+.gallery-grid div:nth-child(4){background:linear-gradient(135deg,#604126,#c49a65)}
+.gallery-grid div:nth-child(5){background:linear-gradient(135deg,#25374a,#8296a8)}
+.gallery-grid div:nth-child(6){background:linear-gradient(135deg,#59312d,#b8796e)}
+
+.venue{
+ background:#151515;
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:35px;
+ align-items:center;
+}
+.venue-box{
+ background:#282019;
+ padding:45px;
+ border:1px solid #55402b;
+}
+.venue-box p{color:#bbb;line-height:1.9;margin-top:15px}
+
+footer{
+ background:#050505;
+ padding:45px 9%;
+ text-align:center;
+ border-top:1px solid #292929;
+}
+footer h2{color:#e9b56d}
+footer p{color:#888;margin-top:12px;font-size:13px}
+
+@media(max-width:800px){
+ .about,.venue{grid-template-columns:1fr}
+ .speakers-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:550px){
+ nav{align-items:flex-start;gap:18px;flex-direction:column}
+ .navlinks{gap:13px}
+ .hero{padding:75px 7%;min-height:550px}
+ section{padding:65px 7%}
+ .speakers-grid{grid-template-columns:1fr}
+ .gallery-grid{grid-template-columns:repeat(2,1fr)}
+ .agenda-item{grid-template-columns:1fr;gap:10px}
+ .art-visual{min-height:250px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+ <div class="logo">ARAM EVENTS ✦</div>
+ <div class="navlinks">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#agenda">Agenda</a>
+  <a href="#speakers">Speakers</a>
+  <a href="#tickets">Tickets</a>
+  <a href="#venue">Venue</a>
+ </div>
+</nav>
+
+<header class="hero" id="home">
+ <div class="hero-content">
+  <div class="tag">ART · CULTURE · INNOVATION</div>
+  <h1>THE ART<br>OF <span>VISION.</span></h1>
+  <p>
+   An immersive creative experience bringing together artists,
+   photographers, designers and visionaries to celebrate
+   extraordinary ideas and artistic expression.
+  </p>
+  <div class="details">
+   <span>📅 December 12, 2026</span>
+   <span>📍 Coimbatore, India</span>
+   <span>⏰ 09:00 AM</span>
+  </div>
+  <a href="#tickets" class="btn">GET YOUR TICKET →</a>
+ </div>
+</header>
+
+<section id="about" class="about">
+ <div>
+  <div class="eyebrow">ABOUT THE EXPERIENCE</div>
+  <h2 class="title">Beyond Ordinary. Beyond Imagination.</h2>
+  <p class="description">
+   The Art of Vision is a creative gathering designed to
+   showcase artistic excellence and innovative thinking.
+   Experience exhibitions, interactive workshops, live
+   demonstrations and conversations with creative professionals.
+  </p>
+ </div>
+ <div class="art-visual">ART<br>WITHOUT LIMITS</div>
+</section>
+
+<section class="agenda" id="agenda">
+ <div class="eyebrow">EVENT SCHEDULE</div>
+ <h2 class="title">The Day's Experience</h2>
+ <p class="description">A full day of creativity, inspiration and connection.</p>
+
+ <div class="agenda-list">
+  <div class="agenda-item">
+   <time>09:00 AM</time>
+   <div><h3>Welcome & Registration</h3><p>Guest arrival and welcome reception.</p></div>
+  </div>
+  <div class="agenda-item">
+   <time>10:00 AM</time>
+   <div><h3>Opening Exhibition</h3><p>Explore featured artwork and photography.</p></div>
+  </div>
+  <div class="agenda-item">
+   <time>11:30 AM</time>
+   <div><h3>Creative Vision Workshop</h3><p>Learn new approaches to visual storytelling.</p></div>
+  </div>
+  <div class="agenda-item">
+   <time>01:00 PM</time>
+   <div><h3>Networking Lunch</h3><p>Connect with artists and creative professionals.</p></div>
+  </div>
+  <div class="agenda-item">
+   <time>02:30 PM</time>
+   <div><h3>Photography Masterclass</h3><p>Discover professional photography techniques.</p></div>
+  </div>
+  <div class="agenda-item">
+   <time>04:00 PM</time>
+   <div><h3>Closing Celebration</h3><p>Creative awards and closing remarks.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="speakers">
+ <div class="eyebrow">MEET THE CREATORS</div>
+ <h2 class="title">Featured Speakers</h2>
+ <p class="description">Meet creative professionals sharing their knowledge and inspiration.</p>
+
+ <div class="speakers-grid">
+  <div class="speaker">
+   <div class="speaker-img">01</div>
+   <h3>Creative Director</h3>
+   <p>Visual Arts & Design</p>
+  </div>
+  <div class="speaker">
+   <div class="speaker-img">02</div>
+   <h3>Photography Expert</h3>
+   <p>Photography & Media</p>
+  </div>
+  <div class="speaker">
+   <div class="speaker-img">03</div>
+   <h3>Art Curator</h3>
+   <p>Contemporary Art</p>
+  </div>
+ </div>
+</section>
+
+<section class="tickets" id="tickets">
+ <div class="eyebrow">JOIN THE EXPERIENCE</div>
+ <h2 class="title">Your Creative Journey Starts Here.</h2>
+ <div class="ticket-card">
+  <h3>General Admission</h3>
+  <div class="price">₹499</div>
+  <p>Access to exhibitions, workshops, sessions and networking.</p>
+  <button onclick="document.getElementById('registration').scrollIntoView({behavior:'smooth'})">
+   REGISTER NOW →
+  </button>
+ </div>
+</section>
+
+<section id="registration">
+ <div class="eyebrow">REGISTRATION</div>
+ <h2 class="title">Reserve Your Place</h2>
+ <form id="registerForm" style="max-width:550px;margin-top:25px">
+  <input required placeholder="Your Full Name" style="width:100%;padding:15px;margin:8px 0;background:#171717;border:1px solid #444;color:white">
+  <input required type="email" placeholder="Email Address" style="width:100%;padding:15px;margin:8px 0;background:#171717;border:1px solid #444;color:white">
+  <input required type="tel" placeholder="Phone Number" style="width:100%;padding:15px;margin:8px 0;background:#171717;border:1px solid #444;color:white">
+  <button type="submit" style="padding:15px 25px;background:#e9b56d;border:0;margin-top:15px;cursor:pointer;font-weight:bold">
+   SUBMIT REGISTRATION →
+  </button>
+ </form>
+ <p id="formMessage" style="color:#e9b56d;margin-top:15px"></p>
+</section>
+
+<section>
+ <div class="eyebrow">VISUAL EXPERIENCES</div>
+ <h2 class="title">Event Gallery</h2>
+ <p class="description">A visual celebration of art and imagination.</p>
+ <div class="gallery-grid">
+  <div></div><div></div><div></div>
+  <div></div><div></div><div></div>
+ </div>
+</section>
+
+<section class="venue" id="venue">
+ <div>
+  <div class="eyebrow">FIND US</div>
+  <h2 class="title">The Venue</h2>
+  <p class="description">Join us for an unforgettable creative experience in Coimbatore.</p>
+ </div>
+ <div class="venue-box">
+  <h2>Creative Arts Convention Centre</h2>
+  <p>Coimbatore, Tamil Nadu, India</p>
+  <p>December 12, 2026</p>
+  <p>09:00 AM – 05:00 PM</p>
+ </div>
+</section>
+
+<footer>
+ <h2>ARAM EVENTS ✦</h2>
+ <p>The Art of Vision · Art & Photos Collection</p>
+ <p>Contact: events@aramevents.com</p>
+ <p>© 2026 Aram Events. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.getElementById("registerForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ document.getElementById("formMessage").textContent=
+ "Thank you! Your demo registration details have been entered.";
+ this.reset();
+});
+</script>
+
+</body>
+</html>

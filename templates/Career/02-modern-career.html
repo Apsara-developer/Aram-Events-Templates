@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Future of Work | Aram Events</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f2ff;color:#292044;font-family:Arial}
+header{padding:22px 6%;display:flex;justify-content:space-between;flex-wrap:wrap;background:white}
+.logo{font-size:22px;font-weight:bold;color:#7047d7}
+nav a{margin:7px;text-decoration:none;color:#292044;font-size:12px}
+.hero{padding:90px 9%;background:linear-gradient(120deg,#e7ddff,#c8c1ff);border-radius:0 0 100px 0}
+h1{font-size:70px;line-height:1;margin:20px 0}
+.btn{background:#7047d7;color:white;padding:14px 24px;text-decoration:none;border:0;cursor:pointer}
+section{padding:55px 9%}h2{font-size:35px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:25px;border-radius:18px;box-shadow:0 8px 25px #392b6612}
+.session{padding:18px;background:white;margin:12px 0;border-radius:12px}
+form{display:grid;gap:12px;max-width:450px}
+input,select{padding:14px;border:1px solid #ccc;border-radius:7px}
+footer{padding:30px;background:#292044;color:white;text-align:center}
+@media(max-width:700px){.grid{grid-template-columns:1fr}h1{font-size:46px}}
+</style>
+</head>
+<body>
+<header><div class="logo">ARAM EVENTS</div><nav>
+<a href="#home">Home</a><a href="#agenda">Agenda</a><a href="#speakers">Speakers</a><a href="#discussions">Discussions</a><a href="#tickets">Tickets</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#exhibitors">Exhibitors</a><a href="#gallery">Gallery</a><a href="#signin">Sign In</a>
+</nav></header>
+<div class="hero" id="home">
+<p>SKILLS · TECHNOLOGY · TOMORROW</p>
+<h1>The Future<br>Starts With You.</h1>
+<p>Explore emerging skills, digital careers and the changing workplace through talks, workshops and connections.</p>
+<a class="btn" href="#tickets">Get Your Pass</a>
+<p>12 December 2026 | Coimbatore</p>
+</div>
+<section><h2>About the Event</h2><p>A modern career experience focused on future-ready skills, technology, professional growth and new opportunities.</p></section>
+<section id="agenda"><h2>Event Agenda</h2>
+<div class="session">09:00 AM — Welcome & Introduction</div><div class="session">10:00 AM — Future Skills Workshop</div><div class="session">11:30 AM — Digital Careers Panel</div><div class="session">01:30 PM — Networking</div><div class="session">03:00 PM — Career Planning</div>
+<button class="btn" onclick="alert('Connect calendar integration before publishing.')">Add to Calendar</button> <button class="btn" onclick="window.print()">Print Agenda</button>
+</section>
+<section id="speakers"><h2>Featured Speakers</h2><div class="grid"><div class="card"><h3>Meera Sharma</h3><p>Technology Strategist</p></div><div class="card"><h3>Arjun Das</h3><p>HR Consultant</p></div><div class="card"><h3>Divya Raj</h3><p>Product Leader</p></div></div></section>
+<section id="discussions"><h2>Discussion Rooms</h2><div class="grid"><div class="card">AI & Future Careers</div><div class="card">Remote Work Culture</div><div class="card">Skills for Tomorrow</div></div></section>
+<section id="tickets"><h2>Choose Your Pass</h2><div class="grid"><div class="card">Student Pass<br><h3>Free</h3></div><div class="card">Professional Pass<br><h3>₹299</h3></div><div class="card">VIP Pass<br><h3>₹599</h3></div></div>
+<form onsubmit="event.preventDefault();alert('Demo registration only. Connect your backend before publishing.')"><input required placeholder="Full Name"><input required type="email" placeholder="Email"><select><option>Student Pass</option><option>Professional Pass</option><option>VIP Pass</option></select><button class="btn">Register Now</button></form></section>
+<section id="sponsors"><h2>Partners</h2><div class="grid"><div class="card">Innovation Partner</div><div class="card">Education Partner</div><div class="card">Technology Partner</div></div></section>
+<section id="venue"><h2>Event Location</h2><p>Coimbatore, Tamil Nadu, India</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Coimbatore">Explore Venue</a></section>
+<section id="exhibitors"><h2>Exhibitors</h2><div class="grid"><div class="card">EdTech</div><div class="card">Technology Companies</div><div class="card">Career Platforms</div></div></section>
+<section id="gallery"><h2>Experience Highlights</h2><div class="grid"><div class="card">Learn</div><div class="card">Connect</div><div class="card">Innovate</div></div></section>
+<section id="signin"><h2>Sign In</h2><form onsubmit="event.preventDefault();alert('Demo sign-in only.')"><input type="email" placeholder="Email" required><input type="password" placeholder="Password" required><button class="btn">Sign In</button></form></section>
+<footer>© 2026 Aram Events | Terms & Policies | Privacy</footer>
+</body></html>

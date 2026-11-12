@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Drive the Future | Aram Events</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#fff5e8;color:#17242b}
+header{padding:22px 5%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.logo{font-weight:1000;font-size:23px}
+nav{display:flex;gap:12px;flex-wrap:wrap}
+nav a{font-size:12px;color:#17242b;text-decoration:none;font-weight:bold}
+.hero{background:#ed583b;color:white;padding:85px 7%;position:relative;overflow:hidden}
+.hero:after{content:"EV";position:absolute;right:3%;bottom:-60px;font-size:clamp(150px,25vw,300px);font-weight:1000;color:#ffffff20}
+.tag{letter-spacing:3px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(55px,10vw,115px);line-height:.88;font-weight:1000;margin:25px 0;text-transform:uppercase}
+.hero p{max-width:650px;line-height:1.7}
+.btn{display:inline-block;background:#17242b;color:white;padding:15px 23px;text-decoration:none;border:0;margin-top:22px;font-weight:bold;cursor:pointer}
+section{padding:60px 7%}
+h2{font-size:40px;margin-bottom:25px;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{background:#ffdf9f;padding:26px}
+.card:nth-child(2){background:#c8e9df}.card:nth-child(3){background:#d8d3fa}
+.card p,.session p{line-height:1.7;margin-top:8px;color:#4d5558}
+.session{display:flex;gap:25px;padding:20px 0;border-bottom:2px solid #17242b}
+.session b{color:#ed583b;min-width:90px}
+form{display:grid;gap:13px;max-width:500px}
+input,select{padding:14px;border:2px solid #17242b;background:white}
+footer{background:#17242b;color:white;padding:35px 7%;line-height:2}
+footer a{color:#ffd18b;margin-right:15px}
+@media(max-width:750px){header{flex-direction:column}.grid{grid-template-columns:1fr}.session{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<header><strong class="logo">ARAM EVENTS ✦</strong><nav>
+<a href="#home">Home</a><a href="#agenda">Agenda</a><a href="#speakers">Speakers</a><a href="#discussions">Discussions</a><a href="#tickets">Tickets</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#exhibitors">Exhibitors</a><a href="#gallery">Gallery</a><a href="#signin">Sign In</a>
+</nav></header>
+<main>
+<div class="hero" id="home"><div class="tag">AUTOMOTIVE · TECHNOLOGY · TOMORROW</div>
+<h1>Drive<br>The<br>Future!</h1>
+<p>Get ready for a high-energy event exploring electric vehicles, smart mobility, automotive engineering and next-generation transport.</p>
+<a class="btn" href="#tickets">GET YOUR PASS</a>
+<p style="margin-top:25px">12 DECEMBER 2026 · COIMBATORE, INDIA</p></div>
+<section><h2>Explore the Future</h2><div class="grid"><div class="card"><h3>GO ELECTRIC</h3><p>Discover EV innovation and sustainable transportation.</p></div><div class="card"><h3>SMART DRIVE</h3><p>Explore connected vehicles and intelligent driving.</p></div><div class="card"><h3>NEW DESIGN</h3><p>Experience modern vehicle design and engineering.</p></div></div></section>
+<section id="agenda"><h2>Event Line-up</h2>
+<div class="session"><b>09:00 AM</b><div><h3>Opening Drive</h3><p>Event introduction and welcome.</p></div></div>
+<div class="session"><b>11:00 AM</b><div><h3>EV Innovation</h3><p>Electric mobility technology showcase.</p></div></div>
+<div class="session"><b>01:00 PM</b><div><h3>Smart Driving</h3><p>Autonomous and connected vehicle systems.</p></div></div>
+<div class="session"><b>03:00 PM</b><div><h3>Mobility Challenge</h3><p>Ideas for tomorrow's transportation.</p></div></div>
+<button class="btn" onclick="alert('Connect calendar integration before publishing.')">Add to Calendar</button>
+<button class="btn" onclick="window.print()">Print Agenda</button></section>
+<section id="speakers"><h2>Meet the Experts</h2><div class="grid"><div class="card"><h3>Rahul Mehta</h3><p>Automotive Engineer</p></div><div class="card"><h3>Priya Nair</h3><p>EV Specialist</p></div><div class="card"><h3>Arun Kumar</h3><p>Mobility Expert</p></div></div></section>
+<section id="discussions"><h2>Talk Mobility</h2><div class="card"><h3>Future Transport Forum</h3><p>Join discussions on electric vehicles and intelligent mobility.</p></div></section>
+<section id="tickets"><h2>Get Your Pass</h2><div class="card"><h3>General Pass – Free</h3><p>Access to sessions and the automotive exhibition.</p></div><br><form onsubmit="event.preventDefault();alert('Demo registration. Connect backend before publishing.')"><input placeholder="Full Name" required><input type="email" placeholder="Email" required><input placeholder="Organization"><select><option>General Pass</option><option>Student Pass</option></select><button class="btn">BOOK NOW</button></form></section>
+<section id="sponsors"><h2>Powered By</h2><div class="grid"><div class="card">Mobility Partner</div><div class="card">EV Partner</div><div class="card">Technology Partner</div></div></section>
+<section id="venue"><h2>Find Us</h2><p>Coimbatore, Tamil Nadu, India</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Coimbatore" target="_blank">VIEW MAP</a></section>
+<section id="exhibitors"><h2>Explore Booths</h2><div class="grid"><div class="card">EV Showcase</div><div class="card">Automotive Parts</div><div class="card">Smart Mobility</div></div></section>
+<section id="gallery"><h2>Event Highlights</h2><div class="grid"><div class="card">MOBILITY 01</div><div class="card">MOBILITY 02</div><div class="card">MOBILITY 03</div></div></section>
+<section id="signin"><h2>Attendee Sign In</h2><form onsubmit="event.preventDefault();alert('Demo sign-in. Connect authentication before publishing.')"><input type="email" placeholder="Email" required><input type="password" placeholder="Password" required><button class="btn">SIGN IN</button></form></section>
+</main>
+<footer><p>© 2026 Aram Events. All rights reserved.</p><br><a href="#home">Terms & Policies</a><a href="#home">Privacy Policy</a><a href="#home">Social Handles</a></footer>
+</body>
+</html>
