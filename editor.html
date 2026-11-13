@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Website Editor</title>
+    <link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+
+<header class="topbar">
+    <h2>Website Editor</h2>
+
+    <div class="actions">
+        <button onclick="saveWebsite()">Save Draft</button>
+        <button class="restore" onclick="restoreOriginal()">Restore Original</button>
+        <button onclick="previewWebsite()">Preview</button>
+        <button class="publish" onclick="publishWebsite()">Publish</button>
+    </div>
+</header>
+
+<div class="editor-container">
+
+    <aside class="sidebar">
+        <h3>Customize Website</h3>
+
+        <label>Select Section</label>
+        <select id="sectionSelect">
+            <option value="">Loading sections...</option>
+        </select>
+
+        <label>Select Text / Heading / Link</label>
+        <select id="textElementSelect">
+            <option value="">Select an element</option>
+        </select>
+
+        <label>Text Content</label>
+        <textarea id="textContentInput"
+            placeholder="Select text to edit"></textarea>
+
+        <label>Background Colour</label>
+        <input type="color" id="backgroundInput" value="#ffffff">
+
+        <label>Text Colour</label>
+        <input type="color" id="textColourInput" value="#222222">
+
+        <label>Select Image</label>
+        <select id="imageSelect">
+            <option value="">Select an image</option>
+        </select>
+
+        <label>Upload Replacement Image</label>
+        <input type="file" id="imageInput" accept="image/*">
+
+        <label>
+            <input type="checkbox" id="visibilityInput" checked>
+            Show Section
+        </label>
+
+        <button onclick="applyChanges()">Apply Changes</button>
+
+        <p id="statusMessage" role="status" aria-live="polite"></p>
+    </aside>
+
+    <main class="preview-area">
+        <div class="preview-heading">Live Website Preview</div>
+
+        <iframe
+            id="websitePreview"
+            title="Live website preview">
+        </iframe>
+    </main>
+
+</div>
+
+<script src="js/editor.js"></script>
+
+</body>
+</html>

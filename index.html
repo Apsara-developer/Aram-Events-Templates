@@ -436,6 +436,19 @@ header {
     text-decoration: underline;
 }
 
+/* NEW: EDIT WEBSITE LINK */
+
+.edit-link {
+    color: #16a36a;
+    font-size: 11px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
 /* EMPTY STATE */
 
 .empty {
@@ -854,8 +867,6 @@ footer strong {
 
 /* ==========================================
    TEMPLATE DATA
-   Keep these folder names and filenames
-   exactly the same as your actual project.
 ========================================== */
 
 const categories = [
@@ -1050,19 +1061,39 @@ function renderTemplates() {
             type.className = "design-type";
             type.textContent = designType;
 
+            /* PREVIEW LINK */
+
             const link = document.createElement("a");
 
             link.className = "preview-link";
             link.href = path;
             link.target = "_blank";
             link.rel = "noopener noreferrer";
-            link.textContent = "Open Website ↗";
+            link.textContent = "Preview ↗";
+
             link.setAttribute(
                 "aria-label",
                 "Open " + templateName + " website in a new tab"
             );
 
+            /* NEW: EDIT WEBSITE LINK */
+
+            const editLink = document.createElement("a");
+
+            editLink.className = "edit-link";
+
+            editLink.href =
+                "./editor.html?template=" + encodeURIComponent(path);
+
+            editLink.textContent = "Edit Website ✎";
+
+            editLink.setAttribute(
+                "aria-label",
+                "Edit " + templateName + " website"
+            );
+
             footer.appendChild(type);
+            footer.appendChild(editLink);
             footer.appendChild(link);
 
             info.appendChild(heading);
