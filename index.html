@@ -5,499 +5,613 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#101827">
-<title>Aram Events | Website Template Collection</title>
+<meta name="description" content="Explore 25 premium event-hosting website templates by Aram Events.">
+<title>Aram Events | Premium Event Website Collection</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-:root{
-    --bg:#f5f7fb;
-    --dark:#101827;
-    --muted:#748096;
-    --primary:#6755e9;
-    --border:#e7eaf1;
-    --white:#fff;
+:root {
+    --bg: #f5f7fb;
+    --dark: #101827;
+    --muted: #748096;
+    --primary: #6755e9;
+    --border: #e7eaf1;
+    --white: #ffffff;
 }
 
-*{margin:0;padding:0;box-sizing:border-box}
-
-html{scroll-behavior:smooth}
-
-body{
-    background:var(--bg);
-    color:var(--dark);
-    font-family:'DM Sans',sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-a{text-decoration:none;color:inherit}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
 
-button,input{font:inherit}
+body {
+    background: var(--bg);
+    color: var(--dark);
+    font-family: 'DM Sans', sans-serif;
+}
 
-.container{
-    width:min(1250px,92%);
-    margin:auto;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input {
+    font: inherit;
+}
+
+.container {
+    width: min(1250px, 92%);
+    margin: auto;
 }
 
 /* HEADER */
 
-header{
-    position:sticky;
-    top:0;
-    z-index:100;
-    background:rgba(255,255,255,.95);
-    backdrop-filter:blur(15px);
-    border-bottom:1px solid var(--border);
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,.96);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--border);
 }
 
-.navbar{
-    height:75px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+.navbar {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
-.brand{
-    font-family:'Outfit',sans-serif;
-    font-size:25px;
-    font-weight:800;
-    letter-spacing:-1px;
+.brand {
+    font-family: 'Outfit', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    white-space: nowrap;
 }
 
-.brand span{color:var(--primary)}
-
-.nav-links{
-    display:flex;
-    gap:28px;
-    align-items:center;
+.brand span {
+    color: var(--primary);
 }
 
-.nav-links a{
-    font-size:13px;
-    color:#657086;
-    font-weight:600;
+.nav-links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
 }
 
-.nav-links a:hover{color:var(--primary)}
+.nav-links a {
+    font-size: 13px;
+    color: #657086;
+    font-weight: 600;
+}
 
-.nav-label{
-    background:#eeeaff;
-    color:var(--primary);
-    padding:10px 16px;
-    border-radius:8px;
-    font-size:12px;
-    font-weight:700;
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.nav-label {
+    background: #eeeaff;
+    color: var(--primary);
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 /* HERO */
 
-.hero{
-    padding:85px 0 75px;
+.hero {
+    padding: 85px 0 75px;
     background:
-    radial-gradient(circle at 85% 20%,#5141c9 0,transparent 30%),
-    linear-gradient(120deg,#101827,#1d2844);
-    color:white;
-    overflow:hidden;
+        radial-gradient(circle at 85% 20%, #5141c9 0, transparent 30%),
+        linear-gradient(120deg, #101827, #1d2844);
+    color: white;
+    overflow: hidden;
 }
 
-.hero-content{
-    max-width:850px;
+.hero-content {
+    max-width: 850px;
 }
 
-.eyebrow{
-    color:#b9afff;
-    font-size:11px;
-    font-weight:800;
-    letter-spacing:3px;
-    text-transform:uppercase;
+.eyebrow {
+    color: #b9afff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-.hero h1{
-    font-family:'Outfit',sans-serif;
-    font-size:clamp(45px,7vw,78px);
-    line-height:1.05;
-    letter-spacing:-3px;
-    margin:23px 0;
+.hero h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(45px, 7vw, 78px);
+    line-height: 1.05;
+    letter-spacing: -3px;
+    margin: 23px 0;
 }
 
-.hero h1 span{color:#a99aff}
-
-.hero p{
-    color:#bdc6d8;
-    font-size:15px;
-    line-height:1.9;
-    max-width:620px;
+.hero h1 span {
+    color: #a99aff;
 }
 
-.hero-actions{
-    display:flex;
-    gap:14px;
-    margin-top:30px;
-    flex-wrap:wrap;
+.hero p {
+    color: #bdc6d8;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 620px;
 }
 
-.primary-btn,.secondary-btn{
-    padding:14px 22px;
-    border-radius:8px;
-    font-size:12px;
-    font-weight:700;
-    display:inline-block;
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
-.primary-btn{
-    background:#7866f2;
-    color:white;
+.primary-btn,
+.secondary-btn {
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    transition: .2s;
 }
 
-.secondary-btn{
-    border:1px solid #65718a;
-    color:white;
+.primary-btn {
+    background: #7866f2;
+    color: white;
 }
 
-/* STATS */
-
-.stats{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:15px;
-    margin-top:55px;
-    max-width:650px;
+.primary-btn:hover {
+    background: #8a7bff;
+    transform: translateY(-2px);
 }
 
-.stat{
-    border-left:2px solid #8b7cff;
-    padding-left:17px;
+.secondary-btn {
+    border: 1px solid #65718a;
+    color: white;
 }
 
-.stat strong{
-    display:block;
-    font:700 31px 'Outfit';
+.secondary-btn:hover {
+    background: rgba(255,255,255,.1);
 }
 
-.stat span{
-    font-size:11px;
-    color:#aab5c9;
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 55px;
+    max-width: 650px;
+}
+
+.stat {
+    border-left: 2px solid #8b7cff;
+    padding-left: 17px;
+}
+
+.stat strong {
+    display: block;
+    font: 700 31px 'Outfit';
+}
+
+.stat span {
+    font-size: 11px;
+    color: #aab5c9;
 }
 
 /* SECTION */
 
-.section{
-    padding:65px 0;
+.section {
+    padding: 65px 0;
 }
 
-.section-heading{
-    display:flex;
-    justify-content:space-between;
-    align-items:end;
-    gap:20px;
-    margin-bottom:30px;
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
-.section-heading h2{
-    font:700 34px 'Outfit';
-    letter-spacing:-1px;
+.section-heading h2 {
+    font: 700 34px 'Outfit';
+    letter-spacing: -1px;
 }
 
-.section-heading p{
-    color:var(--muted);
-    font-size:13px;
-    margin-top:8px;
+.section-heading p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 8px;
 }
 
-.section-number{
-    color:var(--primary);
-    font-size:11px;
-    font-weight:800;
-    letter-spacing:2px;
-    margin-bottom:10px;
+.section-number {
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
 /* SEARCH */
 
-.toolbar{
-    display:flex;
-    justify-content:space-between;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-bottom:25px;
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
 }
 
-.search-box{
-    flex:1;
-    min-width:220px;
-    position:relative;
+.search-box {
+    flex: 1;
+    min-width: 220px;
 }
 
-.search-box input{
-    width:100%;
-    padding:15px 18px;
-    border:1px solid var(--border);
-    border-radius:9px;
-    background:white;
-    outline:none;
-    font-size:13px;
+.search-box input {
+    width: 100%;
+    padding: 15px 18px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: white;
+    outline: none;
+    font-size: 13px;
 }
 
-.search-box input:focus{
-    border-color:var(--primary);
+.search-box input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px #6755e918;
 }
 
-.filter-count{
-    color:var(--muted);
-    font-size:12px;
-    align-self:center;
+.filter-count {
+    color: var(--muted);
+    font-size: 12px;
+    align-self: center;
 }
 
-/* CATEGORY FILTER */
+/* FILTERS */
 
-.filters{
-    display:flex;
-    flex-wrap:wrap;
-    gap:9px;
-    margin-bottom:35px;
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 35px;
 }
 
-.filter-btn{
-    padding:11px 17px;
-    border:1px solid var(--border);
-    background:white;
-    color:#68738a;
-    border-radius:7px;
-    cursor:pointer;
-    font-size:12px;
-    font-weight:700;
-    transition:.2s;
+.filter-btn {
+    padding: 11px 17px;
+    border: 1px solid var(--border);
+    background: white;
+    color: #68738a;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    transition: .2s;
 }
 
 .filter-btn:hover,
-.filter-btn.active{
-    background:var(--dark);
-    border-color:var(--dark);
-    color:white;
+.filter-btn.active {
+    background: var(--dark);
+    border-color: var(--dark);
+    color: white;
 }
 
 /* CATEGORY */
 
-.category-section{
-    margin-bottom:55px;
-    scroll-margin-top:95px;
+.category-section {
+    margin-bottom: 55px;
+    scroll-margin-top: 95px;
 }
 
-.category-title{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:20px;
-    padding-bottom:15px;
-    border-bottom:1px solid var(--border);
+.category-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border);
 }
 
-.category-title h3{
-    font:700 24px 'Outfit';
+.category-title h3 {
+    font: 700 24px 'Outfit';
 }
 
-.category-title span{
-    color:var(--muted);
-    font-size:11px;
+.category-title span {
+    color: var(--muted);
+    font-size: 11px;
 }
 
-/* TEMPLATE CARDS */
+/* TEMPLATE GRID */
 
-.template-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
 }
 
-.template-card{
-    background:white;
-    border:1px solid var(--border);
-    border-radius:12px;
-    overflow:hidden;
-    transition:.25s;
+.template-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .25s;
+    min-width: 0;
 }
 
-.template-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 15px 35px #1b264012;
+.template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px #1b264012;
 }
 
-.preview{
-    height:205px;
-    background:#e8eaf2;
-    position:relative;
-    overflow:hidden;
+.preview {
+    height: 205px;
+    background: #e8eaf2;
+    position: relative;
+    overflow: hidden;
 }
 
-.preview iframe{
-    width:1280px;
-    height:850px;
-    border:0;
-    transform:scale(.25);
-    transform-origin:top left;
-    pointer-events:none;
-    background:white;
+.preview iframe {
+    width: 1280px;
+    height: 850px;
+    border: 0;
+    transform: scale(.25);
+    transform-origin: top left;
+    pointer-events: none;
+    background: white;
 }
 
-.preview-overlay{
-    position:absolute;
-    inset:0;
-    background:transparent;
-    z-index:2;
+.preview-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
 }
 
-.preview-label{
-    position:absolute;
-    top:13px;
-    left:13px;
-    background:white;
-    padding:7px 10px;
-    border-radius:5px;
-    font-size:10px;
-    font-weight:800;
-    z-index:3;
+.preview-label {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    background: white;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 800;
+    z-index: 3;
 }
 
-.template-info{
-    padding:19px;
+.template-info {
+    padding: 19px;
 }
 
-.template-info h4{
-    font:700 17px 'Outfit';
-    margin-bottom:7px;
+.template-info h4 {
+    font: 700 17px 'Outfit';
+    margin-bottom: 7px;
 }
 
-.template-info p{
-    color:var(--muted);
-    font-size:12px;
-    line-height:1.7;
-    min-height:40px;
+.template-info p {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7;
+    min-height: 40px;
 }
 
-.card-footer{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-top:17px;
-    padding-top:14px;
-    border-top:1px solid var(--border);
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 17px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
 }
 
-.design-type{
-    font-size:10px;
-    font-weight:700;
-    color:var(--primary);
-    background:#f0edff;
-    padding:7px 9px;
-    border-radius:5px;
+.design-type {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--primary);
+    background: #f0edff;
+    padding: 7px 9px;
+    border-radius: 5px;
 }
 
-.preview-link{
-    color:var(--primary);
-    font-size:11px;
-    font-weight:800;
+.preview-link {
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
+    white-space: nowrap;
 }
 
-/* EMPTY */
+.preview-link:hover {
+    text-decoration: underline;
+}
 
-.empty{
-    display:none;
-    text-align:center;
-    padding:60px 15px;
-    color:var(--muted);
-    background:white;
-    border-radius:10px;
+/* EMPTY STATE */
+
+.empty {
+    display: none;
+    text-align: center;
+    padding: 60px 15px;
+    color: var(--muted);
+    background: white;
+    border-radius: 10px;
+}
+
+.empty h3 {
+    color: var(--dark);
+    margin-bottom: 8px;
 }
 
 /* ABOUT */
 
-.about{
-    background:white;
-    border-top:1px solid var(--border);
-    border-bottom:1px solid var(--border);
+.about {
+    background: white;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:45px;
-    align-items:center;
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
 }
 
-.about h2{
-    font:700 38px 'Outfit';
-    margin:15px 0;
+.about h2 {
+    font: 700 38px 'Outfit';
+    margin: 15px 0;
 }
 
-.about p{
-    color:var(--muted);
-    font-size:14px;
-    line-height:1.9;
+.about p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
 }
 
-.about-points{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:13px;
+.about-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
 }
 
-.point{
-    padding:19px;
-    background:#f5f6fb;
-    border-radius:9px;
+.point {
+    padding: 19px;
+    background: #f5f6fb;
+    border-radius: 9px;
 }
 
-.point strong{
-    display:block;
-    font:700 16px 'Outfit';
-    margin-bottom:6px;
+.point strong {
+    display: block;
+    font: 700 16px 'Outfit';
+    margin-bottom: 6px;
 }
 
-.point span{
-    color:var(--muted);
-    font-size:11px;
+.point span {
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.6;
 }
 
 /* FOOTER */
 
-footer{
-    background:#101827;
-    color:white;
-    padding:45px 0;
+footer {
+    background: #101827;
+    color: white;
+    padding: 45px 0;
 }
 
-.footer-content{
-    display:flex;
-    justify-content:space-between;
-    gap:20px;
-    flex-wrap:wrap;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
-footer p{
-    color:#9eabc0;
-    font-size:12px;
-    line-height:1.8;
-    margin-top:9px;
+footer p {
+    color: #9eabc0;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-top: 9px;
 }
 
-footer .brand{margin-bottom:10px}
+footer .brand {
+    margin-bottom: 10px;
+}
+
+footer strong {
+    font-size: 13px;
+}
 
 /* RESPONSIVE */
 
-@media(max-width:900px){
-    .template-grid{grid-template-columns:repeat(2,1fr)}
-    .about-grid{grid-template-columns:1fr}
+@media(max-width: 900px) {
+    .template-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-@media(max-width:600px){
-    .nav-links{display:none}
-    .hero{padding:65px 0}
-    .hero h1{letter-spacing:-2px}
-    .stats{grid-template-columns:1fr 1fr}
-    .template-grid{grid-template-columns:1fr}
-    .section-heading{align-items:flex-start;flex-direction:column}
-    .category-title h3{font-size:20px}
-    .about h2{font-size:30px}
-    .about-points{grid-template-columns:1fr 1fr}
+@media(max-width: 600px) {
+    .navbar {
+        min-height: 68px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .brand {
+        font-size: 22px;
+    }
+
+    .nav-label {
+        font-size: 9px;
+        padding: 8px 10px;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .template-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .category-title h3 {
+        font-size: 20px;
+    }
+
+    .about h2 {
+        font-size: 30px;
+    }
+
+    .about-points {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        transition-duration: .01ms !important;
+    }
 }
 </style>
 </head>
@@ -507,352 +621,463 @@ footer .brand{margin-bottom:10px}
 <!-- HEADER -->
 
 <header>
-<div class="container navbar">
+    <div class="container navbar">
 
-<a href="#" class="brand">ARAM<span>EVENTS</span></a>
+        <a href="#home" class="brand">
+            ARAM<span>EVENTS</span>
+        </a>
 
-<nav class="nav-links">
-<a href="#home">Home</a>
-<a href="#templates">Templates</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#templates">Templates</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-<div class="nav-label">DESIGN COLLECTION · 2026</div>
+        <div class="nav-label">DESIGN COLLECTION · 2026</div>
 
-</div>
+    </div>
 </header>
 
 <!-- HERO -->
 
 <section class="hero" id="home">
-<div class="container">
+    <div class="container">
 
-<div class="hero-content">
+        <div class="hero-content">
 
-<div class="eyebrow">ARAM EVENTS · WEBSITE DESIGN COLLECTION</div>
+            <div class="eyebrow">
+                ARAM EVENTS · WEBSITE DESIGN COLLECTION
+            </div>
 
-<h1>
-Every Event.<br>
-A Different <span>Experience.</span>
-</h1>
+            <h1>
+                Every Event.<br>
+                A Different <span>Experience.</span>
+            </h1>
 
-<p>
-Explore a curated collection of premium event-hosting website templates.
-Each design has its own visual identity, layout, typography and colour palette,
-created for different event industries and experiences.
-</p>
+            <p>
+                Explore a curated collection of premium event-hosting
+                website templates. Each design has its own visual identity,
+                layout, typography and colour palette, created for
+                different event industries and experiences.
+            </p>
 
-<div class="hero-actions">
-<a href="#templates" class="primary-btn">Explore All Templates ↗</a>
-<a href="#about" class="secondary-btn">About the Collection</a>
-</div>
+            <div class="hero-actions">
+                <a href="#templates" class="primary-btn">
+                    Explore All Templates ↗
+                </a>
 
-<div class="stats">
-<div class="stat">
-<strong>05</strong>
-<span>Event Categories</span>
-</div>
+                <a href="#about" class="secondary-btn">
+                    About the Collection
+                </a>
+            </div>
 
-<div class="stat">
-<strong>25</strong>
-<span>Website Designs</span>
-</div>
+            <div class="stats">
 
-<div class="stat">
-<strong>100%</strong>
-<span>Responsive Layouts</span>
-</div>
-</div>
+                <div class="stat">
+                    <strong>05</strong>
+                    <span>Event Categories</span>
+                </div>
 
-</div>
-</div>
+                <div class="stat">
+                    <strong>25</strong>
+                    <span>Website Designs</span>
+                </div>
+
+                <div class="stat">
+                    <strong>100%</strong>
+                    <span>Responsive Layouts</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 </section>
 
 <!-- TEMPLATES -->
 
 <section class="section" id="templates">
-<div class="container">
+    <div class="container">
 
-<div class="section-heading">
-<div>
-<div class="section-number">01 / TEMPLATE LIBRARY</div>
-<h2>Explore the Collection</h2>
-<p>Discover different website experiences across event categories.</p>
-</div>
-</div>
+        <div class="section-heading">
+            <div>
+                <div class="section-number">01 / TEMPLATE LIBRARY</div>
+                <h2>Explore the Collection</h2>
+                <p>
+                    Discover different website experiences across event categories.
+                </p>
+            </div>
+        </div>
 
-<div class="toolbar">
+        <!-- SEARCH -->
 
-<div class="search-box">
-<input
-type="search"
-id="searchInput"
-placeholder="Search templates or categories..."
-oninput="filterTemplates()">
-</div>
+        <div class="toolbar">
 
-<div class="filter-count" id="resultCount">
-Showing 25 templates
-</div>
+            <div class="search-box">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search templates or categories..."
+                    aria-label="Search event templates"
+                    autocomplete="off">
+            </div>
 
-</div>
+            <div class="filter-count" id="resultCount" aria-live="polite">
+                Showing 25 of 25 templates
+            </div>
 
-<!-- FILTER BUTTONS -->
+        </div>
 
-<div class="filters">
+        <!-- CATEGORY FILTERS -->
 
-<button class="filter-btn active" data-filter="all" onclick="setFilter('all',this)">All Templates</button>
+        <div class="filters" aria-label="Filter templates">
 
-<button class="filter-btn" data-filter="art-photos" onclick="setFilter('art-photos',this)">Art & Photos</button>
+            <button class="filter-btn active"
+                type="button" data-filter="all">
+                All Templates
+            </button>
 
-<button class="filter-btn" data-filter="automotive" onclick="setFilter('automotive',this)">Automotive</button>
+            <button class="filter-btn"
+                type="button" data-filter="art-photos">
+                Art & Photos
+            </button>
 
-<button class="filter-btn" data-filter="business" onclick="setFilter('business',this)">Business</button>
+            <button class="filter-btn"
+                type="button" data-filter="automotive">
+                Automotive
+            </button>
 
-<button class="filter-btn" data-filter="Career" onclick="setFilter('Career',this)">Career</button>
+            <button class="filter-btn"
+                type="button" data-filter="business">
+                Business
+            </button>
 
-<button class="filter-btn" data-filter="data-analytics" onclick="setFilter('data-analytics',this)">Data Analytics</button>
+            <button class="filter-btn"
+                type="button" data-filter="career">
+                Career
+            </button>
 
-</div>
+            <button class="filter-btn"
+                type="button" data-filter="data-analytics">
+                Data Analytics
+            </button>
 
-<div id="categoryContainer"></div>
+        </div>
 
-<div class="empty" id="emptyMessage">
-<h3>No templates found</h3>
-<p>Try another search or category.</p>
-</div>
+        <!-- DYNAMIC TEMPLATE COLLECTION -->
 
-</div>
+        <div id="categoryContainer"></div>
+
+        <!-- EMPTY MESSAGE -->
+
+        <div class="empty" id="emptyMessage">
+            <h3>No templates found</h3>
+            <p>Try another search or category.</p>
+        </div>
+
+    </div>
 </section>
 
 <!-- ABOUT -->
 
 <section class="section about" id="about">
-<div class="container about-grid">
+    <div class="container about-grid">
 
-<div>
-<div class="section-number">02 / ABOUT ARAM EVENTS</div>
-<h2>Designed for Every Event Experience.</h2>
+        <div>
+            <div class="section-number">02 / ABOUT ARAM EVENTS</div>
 
-<p>
-Aram Events brings together creative and professional event website
-designs in one organized collection. Each template provides a complete
-event-hosting website experience, helping event organizers present
-their events through attractive and informative web pages.
-</p>
+            <h2>Designed for Every Event Experience.</h2>
 
-</div>
+            <p>
+                Aram Events brings together creative and professional
+                event website designs in one organized collection.
+                Each template provides a complete event-hosting website
+                experience, helping event organizers present their events
+                through attractive and informative web pages.
+            </p>
+        </div>
 
-<div class="about-points">
+        <div class="about-points">
 
-<div class="point">
-<strong>Unique Layouts</strong>
-<span>Different website structures and visual identities.</span>
-</div>
+            <div class="point">
+                <strong>Unique Layouts</strong>
+                <span>Different website structures and visual identities.</span>
+            </div>
 
-<div class="point">
-<strong>Responsive Design</strong>
-<span>Layouts adapted for desktop, tablet and mobile.</span>
-</div>
+            <div class="point">
+                <strong>Responsive Design</strong>
+                <span>Layouts adapted for desktop, tablet and mobile.</span>
+            </div>
 
-<div class="point">
-<strong>Event Information</strong>
-<span>Agenda, speakers, sponsors, venue and gallery.</span>
-</div>
+            <div class="point">
+                <strong>Event Information</strong>
+                <span>Agenda, speakers, sponsors, venue and gallery.</span>
+            </div>
 
-<div class="point">
-<strong>Modern Presentation</strong>
-<span>Professional typography, colour and imagery.</span>
-</div>
+            <div class="point">
+                <strong>Modern Presentation</strong>
+                <span>Professional typography, colour and imagery.</span>
+            </div>
 
-</div>
+        </div>
 
-</div>
+    </div>
 </section>
 
 <!-- FOOTER -->
 
 <footer id="contact">
-<div class="container footer-content">
+    <div class="container footer-content">
 
-<div>
-<div class="brand">ARAM<span>EVENTS</span></div>
-<p>Creative event-hosting website template collection.</p>
-</div>
+        <div>
+            <div class="brand">ARAM<span>EVENTS</span></div>
+            <p>Creative event-hosting website template collection.</p>
+        </div>
 
-<div>
-<strong>Template Collection</strong>
-<p>Art & Photos · Automotive · Business</p>
-<p>Career · Data Analytics</p>
-</div>
+        <div>
+            <strong>Template Collection</strong>
+            <p>Art & Photos · Automotive · Business</p>
+            <p>Career · Data Analytics</p>
+        </div>
 
-<div>
-<strong>Project Information</strong>
-<p>HTML · CSS · JavaScript</p>
-<p>© 2026 Aram Events. All Rights Reserved.</p>
-</div>
+        <div>
+            <strong>Project Information</strong>
+            <p>HTML · CSS · JavaScript</p>
+            <p>© 2026 Aram Events. All Rights Reserved.</p>
+        </div>
 
-</div>
+    </div>
 </footer>
 
 <script>
 
-/* TEMPLATE DATA */
+/* ==========================================
+   TEMPLATE DATA
+   Keep these folder names and filenames
+   exactly the same as your actual project.
+========================================== */
 
 const categories = [
 
-{
-name:"Art & Photos",
-folder:"art-photos",
-description:"Creative photography, visual arts and exhibition websites.",
-templates:[
-["01-editorial.html","The Visual Edit","Editorial photography and art experience.","Editorial"],
-["02-modern-grid.html","Creative Canvas","Modern grid-based creative showcase.","Modern Grid"],
-["03-dark-stage.html","Dark Gallery","Immersive dark visual exhibition.","Dark Theme"],
-["04-bold-poster.html","Art in Motion","Bold poster-inspired creative website.","Bold Poster"],
-["05-minimal.html","Pure Aesthetics","Minimal and elegant art experience.","Minimal"]
-]
-},
+    {
+        name: "Art & Photos",
+        folder: "art-photos",
+        description: "Creative photography, visual arts and exhibition websites.",
 
-{
-name:"Automotive",
-folder:"automotive",
-description:"Premium automotive exhibitions, motor shows and launch events.",
-templates:[
-["01-editorial.html","Auto Prestige","Luxury editorial automotive experience.","Editorial"],
-["02-modern-grid.html","Motor Grid","Modern automotive showcase.","Modern Grid"],
-["03-dark-stage.html","Velocity Night","Dark premium automotive presentation.","Dark Theme"],
-["04-bold-poster.html","Speed Culture","Bold motorsport-inspired website.","Bold Poster"],
-["05-minimal.html","Driven Minimal","Elegant automotive event experience.","Minimal"]
-]
-},
+        templates: [
+            ["01-editorial.html", "The Visual Edit", "Editorial photography and art experience.", "Editorial"],
+            ["02-modern-grid.html", "Creative Canvas", "Modern grid-based creative showcase.", "Modern Grid"],
+            ["03-dark-stage.html", "Dark Gallery", "Immersive dark visual exhibition.", "Dark Theme"],
+            ["04-bold-poster.html", "Art in Motion", "Bold poster-inspired creative website.", "Bold Poster"],
+            ["05-minimal.html", "Pure Aesthetics", "Minimal and elegant art experience.", "Minimal"]
+        ]
+    },
 
-{
-name:"Business",
-folder:"business",
-description:"Professional conferences, business summits and networking events.",
-templates:[
-["01-editorial.html","The Executive Forum","Sophisticated corporate event website.","Editorial"],
-["02-dashboard.html","Business Connect","Structured modern business experience.","Dashboard"],
-["03-dark-premium.html","The Black Summit","Premium dark corporate presentation.","Dark Premium"],
-["04-kinetic.html","Momentum Business","Energetic and dynamic business website.","Kinetic"],
-["05-warm-cards.html","The Business Circle","Warm and approachable business experience.","Warm Cards"]
-]
-},
+    {
+        name: "Automotive",
+        folder: "automotive",
+        description: "Premium automotive exhibitions, motor shows and launch events.",
 
-{
-name:"Career",
-folder:"Career",
-description:"Career fairs, professional development and recruitment events.",
-templates:[
-["01-professional.html","Career Forward","Professional career conference website.","Professional"],
-["02-modern-career.html","Next Career","Modern career development experience.","Modern"],
-["03-dark-networking.html","Network After Hours","Dark networking event presentation.","Dark Theme"],
-["04-creative-jobs.html","Creative Careers","Colourful career opportunity showcase.","Creative"],
-["05-minimal-conference.html","Career Perspectives","Minimal professional conference website.","Minimal"]
-]
-},
+        templates: [
+            ["01-editorial.html", "Auto Prestige", "Luxury editorial automotive experience.", "Editorial"],
+            ["02-modern-grid.html", "Motor Grid", "Modern automotive showcase.", "Modern Grid"],
+            ["03-dark-stage.html", "Velocity Night", "Dark premium automotive presentation.", "Dark Theme"],
+            ["04-bold-poster.html", "Speed Culture", "Bold motorsport-inspired website.", "Bold Poster"],
+            ["05-minimal.html", "Driven Minimal", "Elegant automotive event experience.", "Minimal"]
+        ]
+    },
 
-{
-name:"Data Analytics",
-folder:"data-analytics",
-description:"Data science conferences, AI summits and analytics festivals.",
-templates:[
-["01-data-summit.html","Data Summit","Corporate data and analytics conference.","Corporate"],
-["02-analytics-dashboard.html","Analytics Pulse","Violet modern analytics experience.","Dashboard"],
-["03-dark-tech.html","Data After Dark","Futuristic dark technology website.","Dark Tech"],
-["04-data-innovation.html","Data Innovation Festival","Creative data innovation festival.","Creative"],
-["05-minimal-insights.html","The Data Perspective","Minimal editorial data conference.","Minimal"]
-]
-}
+    {
+        name: "Business",
+        folder: "business",
+        description: "Professional conferences, business summits and networking events.",
+
+        templates: [
+            ["01-editorial.html", "The Executive Forum", "Sophisticated corporate event website.", "Editorial"],
+            ["02-dashboard.html", "Business Connect", "Structured modern business experience.", "Dashboard"],
+            ["03-dark-premium.html", "The Black Summit", "Premium dark corporate presentation.", "Dark Premium"],
+            ["04-kinetic.html", "Momentum Business", "Energetic and dynamic business website.", "Kinetic"],
+            ["05-warm-cards.html", "The Business Circle", "Warm and approachable business experience.", "Warm Cards"]
+        ]
+    },
+
+    {
+        name: "Career",
+        folder: "career",
+        description: "Career fairs, professional development and recruitment events.",
+
+        templates: [
+            ["01-professional.html", "Career Forward", "Professional career conference website.", "Professional"],
+            ["02-modern-career.html", "Next Career", "Modern career development experience.", "Modern"],
+            ["03-dark-networking.html", "Network After Hours", "Dark networking event presentation.", "Dark Theme"],
+            ["04-creative-jobs.html", "Creative Careers", "Colourful career opportunity showcase.", "Creative"],
+            ["05-minimal-conference.html", "Career Perspectives", "Minimal professional conference website.", "Minimal"]
+        ]
+    },
+
+    {
+        name: "Data Analytics",
+        folder: "data-analytics",
+        description: "Data science conferences, AI summits and analytics festivals.",
+
+        templates: [
+            ["01-data-summit.html", "Data Summit", "Corporate data and analytics conference.", "Corporate"],
+            ["02-analytics-dashboard.html", "Analytics Pulse", "Violet modern analytics experience.", "Dashboard"],
+            ["03-dark-tech.html", "Data After Dark", "Futuristic dark technology website.", "Dark Tech"],
+            ["04-data-innovation.html", "Data Innovation Festival", "Creative data innovation festival.", "Creative"],
+            ["05-minimal-insights.html", "The Data Perspective", "Minimal editorial data conference.", "Minimal"]
+        ]
+    }
 
 ];
 
-/* RENDER CATEGORY AND CARDS */
 
-const categoryContainer = document.getElementById("categoryContainer");
+/* ==========================================
+   ELEMENTS
+========================================== */
 
-function renderTemplates(){
+const categoryContainer =
+    document.getElementById("categoryContainer");
+
+const searchInput =
+    document.getElementById("searchInput");
+
+const resultCount =
+    document.getElementById("resultCount");
+
+const emptyMessage =
+    document.getElementById("emptyMessage");
+
+let selectedCategory = "all";
+
+
+/* ==========================================
+   BUILD TEMPLATE CARDS
+========================================== */
+
+function renderTemplates() {
 
     categoryContainer.innerHTML = "";
 
     categories.forEach(category => {
 
-        const section = document.createElement("div");
+        const section = document.createElement("section");
 
         section.className = "category-section";
 
         section.dataset.category = category.folder;
 
-        section.innerHTML = `
-            <div class="category-title">
-                <h3>${category.name}</h3>
-                <span>05 DESIGNS</span>
-            </div>
+        const heading = document.createElement("div");
 
-            <div class="template-grid">
+        heading.className = "category-title";
 
-                ${category.templates.map(template => {
+        const title = document.createElement("h3");
+        title.textContent = category.name;
 
-                    const path = `templates/${category.folder}/${template[0]}`;
+        const count = document.createElement("span");
+        count.textContent = "05 DESIGNS";
 
-                    return `
-                    <article class="template-card"
-                    data-search="${(
-                        category.name+" "+
-                        template[1]+" "+
-                        template[2]+" "+
-                        template[3]
-                    ).toLowerCase()}">
+        heading.appendChild(title);
+        heading.appendChild(count);
 
-                        <div class="preview">
+        const grid = document.createElement("div");
 
-                            <iframe
-                                src="${path}"
-                                title="${template[1]} preview"
-                                loading="lazy">
-                            </iframe>
+        grid.className = "template-grid";
 
-                            <div class="preview-overlay"></div>
+        category.templates.forEach(template => {
 
-                            <span class="preview-label">
-                                LIVE PREVIEW
-                            </span>
+            const fileName = template[0];
+            const templateName = template[1];
+            const description = template[2];
+            const designType = template[3];
 
-                        </div>
+            const path =
+                `./templates/${category.folder}/${fileName}`;
 
-                        <div class="template-info">
+            const card = document.createElement("article");
 
-                            <h4>${template[1]}</h4>
+            card.className = "template-card";
 
-                            <p>${template[2]}</p>
+            card.dataset.search = [
+                category.name,
+                category.description,
+                templateName,
+                description,
+                designType
+            ].join(" ").toLowerCase();
 
-                            <div class="card-footer">
+            /* PREVIEW */
 
-                                <span class="design-type">
-                                    ${template[3]}
-                                </span>
+            const preview = document.createElement("div");
+            preview.className = "preview";
 
-                                <a
-                                    class="preview-link"
-                                    href="${path}"
-                                    target="_blank"
-                                    rel="noopener">
-                                    Open Website ↗
-                                </a>
+            const iframe = document.createElement("iframe");
 
-                            </div>
+            iframe.src = path;
+            iframe.title = templateName + " website preview";
+            iframe.loading = "lazy";
 
-                        </div>
+            preview.appendChild(iframe);
 
-                    </article>
-                    `;
+            const overlay = document.createElement("div");
+            overlay.className = "preview-overlay";
+            overlay.setAttribute("aria-hidden", "true");
 
-                }).join("")}
+            preview.appendChild(overlay);
 
-            </div>
-        `;
+            const label = document.createElement("span");
+            label.className = "preview-label";
+            label.textContent = "LIVE PREVIEW";
+
+            preview.appendChild(label);
+
+            /* TEMPLATE DETAILS */
+
+            const info = document.createElement("div");
+            info.className = "template-info";
+
+            const heading = document.createElement("h4");
+            heading.textContent = templateName;
+
+            const paragraph = document.createElement("p");
+            paragraph.textContent = description;
+
+            const footer = document.createElement("div");
+            footer.className = "card-footer";
+
+            const type = document.createElement("span");
+            type.className = "design-type";
+            type.textContent = designType;
+
+            const link = document.createElement("a");
+
+            link.className = "preview-link";
+            link.href = path;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = "Open Website ↗";
+            link.setAttribute(
+                "aria-label",
+                "Open " + templateName + " website in a new tab"
+            );
+
+            footer.appendChild(type);
+            footer.appendChild(link);
+
+            info.appendChild(heading);
+            info.appendChild(paragraph);
+            info.appendChild(footer);
+
+            card.appendChild(preview);
+            card.appendChild(info);
+
+            grid.appendChild(card);
+
+        });
+
+        section.appendChild(heading);
+        section.appendChild(grid);
 
         categoryContainer.appendChild(section);
 
@@ -862,75 +1087,107 @@ function renderTemplates(){
 
 }
 
-/* CATEGORY FILTER */
 
-let selectedCategory = "all";
+/* ==========================================
+   CATEGORY FILTER
+========================================== */
 
-function setFilter(category,button){
+function setFilter(category) {
 
     selectedCategory = category;
 
-    document.querySelectorAll(".filter-btn").forEach(btn=>{
-        btn.classList.remove("active");
-    });
+    document.querySelectorAll(".filter-btn").forEach(button => {
 
-    button.classList.add("active");
+        const isActive =
+            button.dataset.filter === category;
+
+        button.classList.toggle("active", isActive);
+
+        button.setAttribute(
+            "aria-pressed",
+            String(isActive)
+        );
+
+    });
 
     filterTemplates();
 
 }
 
-/* SEARCH AND FILTER */
 
-function filterTemplates(){
+/* ==========================================
+   SEARCH AND FILTER
+========================================== */
 
-    const search = document
-        .getElementById("searchInput")
-        .value
+function filterTemplates() {
+
+    const search = searchInput.value
         .toLowerCase()
         .trim();
 
     let total = 0;
 
-    document.querySelectorAll(".category-section").forEach(section=>{
+    document.querySelectorAll(".category-section").forEach(section => {
 
         const category = section.dataset.category;
 
+        const matchesCategory =
+            selectedCategory === "all" ||
+            category === selectedCategory;
+
         let visible = 0;
 
-        section.querySelectorAll(".template-card").forEach(card=>{
-
-            const matchesCategory =
-                selectedCategory === "all" ||
-                category === selectedCategory;
+        section.querySelectorAll(".template-card").forEach(card => {
 
             const matchesSearch =
                 card.dataset.search.includes(search);
 
-            const show = matchesCategory && matchesSearch;
+            const show =
+                matchesCategory && matchesSearch;
 
             card.style.display = show ? "" : "none";
 
-            if(show){
+            if (show) {
                 visible++;
                 total++;
             }
 
         });
 
-        section.style.display = visible > 0 ? "" : "none";
+        section.style.display =
+            visible > 0 ? "" : "none";
 
     });
 
-    document.getElementById("resultCount").textContent =
-        `Showing ${total} templates`;
+    resultCount.textContent =
+        `Showing ${total} of 25 templates`;
 
-    document.getElementById("emptyMessage").style.display =
+    emptyMessage.style.display =
         total === 0 ? "block" : "none";
 
 }
 
-/* INITIALIZE */
+
+/* ==========================================
+   EVENT LISTENERS
+========================================== */
+
+searchInput.addEventListener("input", filterTemplates);
+
+document.querySelectorAll(".filter-btn").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        setFilter(button.dataset.filter);
+
+    });
+
+});
+
+
+/* ==========================================
+   INITIALIZE WEBSITE
+========================================== */
 
 renderTemplates();
 
