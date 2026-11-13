@@ -2,87 +2,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Minimal Insights Conference | Aram Events</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Data Perspective | Aram Events</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:white;color:#26372e;font-family:Georgia,serif;line-height:1.7}
-header{padding:25px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;border-bottom:1px solid #d5ded7}
-.logo{font:bold 20px Arial;color:#4c795d;letter-spacing:2px}
-nav{display:flex;gap:12px;flex-wrap:wrap}
-nav a{font:12px Arial;text-decoration:none;color:#26372e}
-.hero{padding:110px 12%;background:linear-gradient(120deg,#f0f3ef,#fff)}
-.hero h1{font-size:clamp(50px,7vw,82px);line-height:1.1;font-weight:normal}
-.hero p{max-width:580px;font-size:18px}
-.btn{display:inline-block;background:#4c795d;color:white;padding:14px 23px;text-decoration:none;border:0;cursor:pointer;font-family:Arial;margin:10px 5px 10px 0}
-.secondary{background:white;color:#4c795d;border:1px solid #4c795d}
-section{padding:60px 12%;border-bottom:1px solid #e2e8e2}
-h2{font-size:35px;font-weight:normal}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{padding:25px;background:#f7f8f6;border:1px solid #e2e8e2}
-.session{padding:20px 0;border-bottom:1px solid #dce3dd}
-form{display:grid;gap:12px;max-width:450px}
-input,select{padding:14px;border:1px solid #ccd6ce;background:white}
-footer{padding:35px;background:#26372e;color:white;text-align:center;font:13px Arial}
-@media(max-width:700px){.grid{grid-template-columns:1fr}.hero{padding:65px 8%}section{padding:45px 8%}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fafaf6;color:#27342f;font-family:Inter,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1080px,88%);margin:auto}header{padding:25px 0;border-bottom:1px solid #e1e5dc}.nav{display:flex;justify-content:space-between;align-items:center}.logo{font:700 17px 'Libre Baskerville';letter-spacing:1px}.links{display:flex;gap:17px;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#69756d}.hero{padding:105px 0 80px}.tag{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#78917c}.hero h1{font:400 clamp(48px,8vw,87px)/1.2 'Libre Baskerville';max-width:900px;margin:25px 0}.hero p,.lead{font-size:14px;line-height:2;color:#7a837b;max-width:670px}.btn{display:inline-block;border:1px solid #66816d;color:#526d59;padding:15px 23px;margin-top:22px;font-size:10px;letter-spacing:2px;text-transform:uppercase}.heroMeta{margin-top:45px;padding-top:20px;border-top:1px solid #e1e5dc;display:flex;gap:40px;font-size:12px;color:#748076}.section{padding:75px 0;border-top:1px solid #e1e5dc}.section h2{font:400 clamp(35px,5vw,54px) 'Libre Baskerville';margin:15px 0 25px}.two{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.two img{width:100%;height:350px;object-fit:cover;filter:saturate(.6)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.card img{width:100%;height:230px;object-fit:cover;filter:saturate(.65)}.card h3{font:20px 'Libre Baskerville';margin:16px 0 7px}.card p,.muted{font-size:12px;color:#89928b;line-height:1.8}.slot{display:grid;grid-template-columns:145px 1fr;padding:25px 0;border-bottom:1px solid #e1e5dc}.slot time{font-size:11px;color:#718b77}.slot h3{font:18px 'Libre Baskerville';margin:0 0 8px}.slot p{font-size:12px;color:#89928b;margin:0;line-height:1.8}.partners{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;padding:25px 0;color:#657d69;font:700 14px 'Libre Baskerville'}.venue{border:1px solid #dce3d9;padding:30px}.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}.gallery img{width:100%;height:190px;object-fit:cover;filter:saturate(.6)}.gallery img:first-child{height:392px;grid-row:span 2}footer{background:#27342f;color:white;padding:50px 0}footer p{font-size:12px;color:#c1ccc3;line-height:1.9}@media(max-width:750px){.links{display:none}.hero{padding:65px 0}.heroMeta{flex-direction:column;gap:12px}.two{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.slot{grid-template-columns:95px 1fr}.gallery{grid-template-columns:1fr 1fr}.gallery img:first-child{grid-column:span 2;grid-row:auto;height:220px}}
 </style>
 </head>
 <body>
-<header>
-<div class="logo">ARAM EVENTS</div>
-<nav>
-<a href="#home">Home</a><a href="#agenda">Agenda</a><a href="#speakers">Speakers</a><a href="#discussions">Discussions</a><a href="#tickets">Tickets</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#exhibitors">Exhibitors</a><a href="#gallery">Gallery</a><a href="#signin">Sign In</a>
-</nav>
-</header>
-<div class="hero" id="home">
-<p>A CLEARER VIEW OF WHAT MATTERS</p>
-<h1>Find Clarity<br>in Complexity.</h1>
-<p>A thoughtful conference about useful insights, sound decisions and responsible data practice.</p>
-<a class="btn" href="#tickets">Reserve Your Seat</a>
-<p>12 December 2026 · Coimbatore, India</p>
-</div>
-<section id="about"><h2>About the Conference</h2><p>A focused gathering for people interested in meaningful data insights, responsible analytics and better decision-making. Learn, reflect and connect with experts.</p></section>
-<section id="agenda"><h2>Programme</h2>
-<div class="session">09:00 AM — Welcome & Introduction</div>
-<div class="session">10:00 AM — Learning from Data</div>
-<div class="session">11:30 AM — A Conversation on Analytics</div>
-<div class="session">01:30 PM — Responsible Data Practices</div>
-<div class="session">03:00 PM — Closing Reflections</div>
-<button class="btn" onclick="alert('Connect calendar integration before publishing.')">Add to Calendar</button>
-<button class="btn secondary" onclick="window.print()">Print Agenda</button>
-</section>
-<section id="speakers"><h2>Contributors</h2><div class="grid">
-<div class="card"><h3>Meera Iyer</h3><p>Data Researcher</p></div>
-<div class="card"><h3>Ravi Narayan</h3><p>Analytics Professional</p></div>
-<div class="card"><h3>Leela Menon</h3><p>Technology Consultant</p></div>
+<header><div class="wrap nav"><a class="logo" href="#">THE DATA PERSPECTIVE</a><nav class="links"><a href="#about">Overview</a><a href="#agenda">Programme</a><a href="#speakers">Speakers</a><a href="#partners">Partners</a><a href="#venue">Location</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap"><div class="tag">Annual data & analytics conference · 2026</div><h1>Understanding Tomorrow Through Data.</h1><p>A thoughtful conference exploring the role of analytics, research, artificial intelligence and data-driven decision-making in shaping modern industries.</p><a class="btn" href="#about">Explore the conference</a><div class="heroMeta"><span>21 December 2026</span><span>Coimbatore, Tamil Nadu</span><span>Data Science & Analytics</span></div></div></section>
+<section class="section" id="about"><div class="wrap two"><div><div class="tag">01 / Conference overview</div><h2>Better questions lead to better insights.</h2><p class="lead">The Data Perspective is a knowledge-focused conference for researchers, analysts, educators, business professionals and technology enthusiasts. It examines the relationship between data, human understanding and intelligent decision-making through meaningful conversations and expert perspectives.</p></div><img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=900" alt="Data analysis and research"></div></section>
+<section class="section" id="agenda"><div class="wrap"><div class="tag">02 / Conference programme</div><h2>A programme of perspectives.</h2>
+<div class="slot"><time>09:00 AM</time><div><h3>Opening Address: The Value of Data</h3><p>Understanding the importance of data in a changing world.</p></div></div>
+<div class="slot"><time>10:30 AM</time><div><h3>Analytics & Research Methods</h3><p>From data collection to meaningful interpretation.</p></div></div>
+<div class="slot"><time>01:30 PM</time><div><h3>Artificial Intelligence & Decision Making</h3><p>Exploring intelligent systems and responsible applications.</p></div></div>
+<div class="slot"><time>03:30 PM</time><div><h3>Perspectives on the Future</h3><p>Expert discussions on emerging trends and opportunities.</p></div></div>
 </div></section>
-<section id="discussions"><h2>Conversations</h2><div class="grid">
-<div class="card"><h3>Meaningful Insights</h3><p>Finding what matters in information.</p></div>
-<div class="card"><h3>Responsible Data</h3><p>Privacy, quality and ethical practices.</p></div>
-<div class="card"><h3>Future of Analytics</h3><p>New approaches to data-driven decisions.</p></div>
-</div></section>
-<section id="tickets"><h2>Registration</h2><div class="grid">
-<div class="card"><h3>Student Pass</h3><p>Free</p></div>
-<div class="card"><h3>Standard Pass</h3><p>₹299</p></div>
-<div class="card"><h3>Premium Pass</h3><p>₹599</p></div>
-</div>
-<form onsubmit="event.preventDefault();alert('Demo registration only. Connect your backend before publishing.')">
-<input required placeholder="Full Name">
-<input required type="email" placeholder="Email Address">
-<select><option>Student Pass</option><option>Standard Pass</option><option>Premium Pass</option></select>
-<button class="btn">Complete Registration</button>
-</form></section>
-<section id="sponsors"><h2>With Thanks To</h2><div class="grid"><div class="card">Knowledge Partner</div><div class="card">Community Partner</div><div class="card">Event Partner</div></div></section>
-<section id="venue"><h2>Location</h2><p>Coimbatore, Tamil Nadu, India</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Coimbatore">View Location</a></section>
-<section id="exhibitors"><h2>Exhibitions</h2><div class="grid"><div class="card">Learning Resources</div><div class="card">Analytics Solutions</div><div class="card">Data Communities</div></div></section>
-<section id="gallery"><h2>Moments</h2><div class="grid"><div class="card">Ideas</div><div class="card">People</div><div class="card">Progress</div></div></section>
-<section id="signin"><h2>Attendee Sign In</h2>
-<form onsubmit="event.preventDefault();alert('Demo sign-in only.')">
-<input required type="email" placeholder="Email Address">
-<input required type="password" placeholder="Password">
-<button class="btn">Sign In</button>
-</form></section>
-<footer>© 2026 Aram Events | Terms & Policies | Privacy Policy</footer>
+<section class="section" id="speakers"><div class="wrap"><div class="tag">03 / Featured contributors</div><h2>Experience. Research. Perspective.</h2><div class="cards">
+<article class="card"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600" alt="Speaker portrait"><h3>Dr. Karthik Raman</h3><p>Data Research Specialist</p></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600" alt="Speaker portrait"><h3>Dr. Anjali Menon</h3><p>AI & Analytics Researcher</p></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600" alt="Speaker portrait"><h3>James Philip</h3><p>Business Intelligence Consultant</p></article>
+</div><p class="muted">Illustrative speaker profiles. Actual contributors to be confirmed.</p></div></section>
+<section class="section" id="partners"><div class="wrap"><div class="tag">04 / Institutional collaboration</div><h2>Our supporting partners.</h2><div class="partners"><span>DATA RESEARCH</span><span>ANALYTICS FORUM</span><span>INSIGHT INSTITUTE</span><span>FUTURE THINKERS</span></div><p class="muted">Sample partner identities for the template.</p></div></section>
+<section class="section" id="venue"><div class="wrap two"><div><div class="tag">05 / Conference location</div><h2>A setting for thoughtful exchange.</h2><div class="venue"><b>Coimbatore, Tamil Nadu, India</b><p class="lead">A professional conference venue planned for presentations, research discussions and industry interaction.</p><p class="muted">Final venue name and address to be confirmed.</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Coimbatore" target="_blank" rel="noopener">View location</a></div></div><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900" alt="Conference meeting space"></div></section>
+<section class="section" id="gallery"><div class="wrap"><div class="tag">06 / Visual archive</div><h2>Moments of discovery.</h2><div class="gallery"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700" alt="Analytics dashboard"><img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500" alt="Presentation"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500" alt="Discussion"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500" alt="Conference"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=500" alt="Teamwork"></div></div></section>
+</main>
+<footer id="contact"><div class="wrap"><h2 style="font:32px 'Libre Baskerville'">THE DATA PERSPECTIVE</h2><p>General enquiries: hello@dataperspective.example</p><p>Coimbatore, Tamil Nadu, India</p><p>© 2026 The Data Perspective. All rights reserved.</p></div></footer>
 </body>
 </html>

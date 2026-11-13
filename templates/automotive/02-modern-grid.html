@@ -2,61 +2,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>EV Innovation Summit | Aram Events</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MOVE NEXT | Automotive Technology Expo</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#f1f5f6;color:#172b35}
-header{background:white;padding:22px 5%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-.logo{font-weight:900;font-size:23px;color:#087d91}
-nav{display:flex;gap:13px;flex-wrap:wrap}
-nav a{text-decoration:none;color:#334750;font-size:12px}
-.hero{margin:25px 5%;padding:60px;background:#cce8ed;border-radius:22px;display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center}
-h1{font-size:clamp(42px,6vw,70px);line-height:1.05}
-.hero p{line-height:1.8;margin:20px 0;color:#52636b}
-.visual{height:260px;background:linear-gradient(140deg,#087d91,#142e3c);border-radius:18px;display:grid;place-items:center;color:white;font-size:35px;font-weight:bold}
-.btn{display:inline-block;background:#087d91;color:white;padding:14px 22px;text-decoration:none;border:0;border-radius:7px;cursor:pointer}
-section{padding:55px 6%}
-h2{font-size:34px;margin-bottom:25px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:white;padding:25px;border-radius:14px;box-shadow:0 6px 20px #0000000c}
-.card p,.session p{color:#69777d;line-height:1.7;margin-top:8px}
-.session{background:white;border-radius:10px;padding:20px;margin:12px 0;display:grid;grid-template-columns:110px 1fr}
-form{max-width:500px;display:grid;gap:12px}
-input,select{padding:14px;border:1px solid #d2dcdf;border-radius:7px}
-footer{padding:35px 6%;background:#142e3c;color:white;line-height:2}
-footer a{color:#9ddbe4;margin-right:15px}
-@media(max-width:750px){.hero{grid-template-columns:1fr;padding:35px}.grid{grid-template-columns:1fr}.session{grid-template-columns:1fr;gap:8px}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f8fc;color:#17243a;font-family:Manrope,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1200px,92%);margin:auto}header{background:#fff;padding:22px 0;border-bottom:1px solid #e3eaf2}.nav{display:flex;justify-content:space-between;align-items:center}.logo{font-size:23px;font-weight:800;letter-spacing:-1px}.logo span{color:#1677ee}.links{display:flex;gap:22px;font-size:11px;font-weight:700;text-transform:uppercase}.hero{padding:65px 0;display:grid;grid-template-columns:1fr 1fr;gap:25px}.heroText{background:#dcecff;padding:55px;display:flex;flex-direction:column;justify-content:center}.tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:800;color:#1677ee}.hero h1{font-size:clamp(48px,7vw,84px);line-height:.98;letter-spacing:-5px;margin:22px 0}.hero p,.lead{line-height:1.9;color:#637187;font-size:14px}.hero img{width:100%;height:490px;object-fit:cover}.btn{display:inline-block;background:#176fe0;color:white;padding:15px 22px;margin-top:20px;font-size:11px;font-weight:800;text-transform:uppercase;width:max-content}.section{padding:70px 0;border-top:1px solid #dce4ed}.section h2{font-size:clamp(35px,5vw,55px);letter-spacing:-3px;margin:12px 0 28px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid #e4eaf1}.card img{width:100%;height:220px;object-fit:cover}.card div{padding:20px}.card h3{font-size:19px;margin:0 0 8px}.card p,.muted{font-size:13px;color:#6d7a8d;line-height:1.7}.agenda{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.slot{background:#fff;padding:25px;border-left:4px solid #1677ee}.slot time{font-size:11px;color:#1677ee;font-weight:800}.slot h3{margin:10px 0 5px}.slot p{font-size:13px;color:#6d7a8d}.people{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.person{background:#fff;padding:14px}.person img{width:100%;height:270px;object-fit:cover}.person h3{margin:13px 0 3px}.person p{font-size:12px;color:#718096}.partners{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.partners span{padding:28px 10px;background:#e4edf8;text-align:center;font-weight:800;font-size:13px}.venue{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.venue img{width:100%;height:350px;object-fit:cover}.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}.gallery img{width:100%;height:220px;object-fit:cover}.gallery img:first-child{height:452px;grid-row:span 2}footer{background:#13233b;color:white;padding:50px 0}footer p{color:#b7c4d6;font-size:13px;line-height:1.8}@media(max-width:750px){.links{display:none}.hero,.venue{grid-template-columns:1fr}.heroText{padding:35px}.hero img{height:320px}.grid3,.people{grid-template-columns:1fr}.agenda{grid-template-columns:1fr}.partners{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr}.gallery img:first-child{grid-row:auto;height:220px}}
 </style>
 </head>
 <body>
-<header><strong class="logo">ARAM EVENTS</strong><nav>
-<a href="#home">Home</a><a href="#agenda">Agenda</a><a href="#speakers">Speakers</a><a href="#discussions">Discussions</a><a href="#tickets">Tickets</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#exhibitors">Exhibitors</a><a href="#gallery">Gallery</a><a href="#signin">Sign In</a>
-</nav></header>
+<header><div class="wrap nav"><a class="logo" href="#">MOVE<span>NEXT</span></a><nav class="links"><a href="#about">About</a><a href="#agenda">Agenda</a><a href="#showcase">Innovation</a><a href="#venue">Venue</a><a href="#contact">Contact</a></nav></div></header>
 <main>
-<div class="hero" id="home"><div><p>EV TECHNOLOGY · 2026</p><h1>EV Innovation Summit</h1><p>Discover electric mobility, battery innovation, charging infrastructure and connected vehicle technologies.</p><a class="btn" href="#tickets">Join the Summit</a><p>12 December 2026 · Coimbatore, India</p></div><div class="visual">E-MOBILITY</div></div>
-<section><h2>Innovation Areas</h2><div class="grid">
-<div class="card"><h3>Electric Vehicles</h3><p>Explore new electric vehicle developments.</p></div>
-<div class="card"><h3>Battery Systems</h3><p>Discover battery technology and energy storage.</p></div>
-<div class="card"><h3>Smart Charging</h3><p>Understand next-generation charging networks.</p></div>
-</div></section>
-<section id="agenda"><h2>Agenda</h2>
-<div class="session"><b>09:00 AM</b><div><h3>Welcome Session</h3><p>Opening and event introduction.</p></div></div>
-<div class="session"><b>10:30 AM</b><div><h3>EV Technology</h3><p>Electric vehicle architecture and innovation.</p></div></div>
-<div class="session"><b>01:00 PM</b><div><h3>Battery Innovation</h3><p>Battery systems and charging solutions.</p></div></div>
-<div class="session"><b>03:00 PM</b><div><h3>Mobility Panel</h3><p>Industry experts discuss future opportunities.</p></div></div>
-<button class="btn" onclick="alert('Connect calendar integration before publishing.')">Add to Calendar</button>
-<button class="btn" onclick="window.print()">Print Agenda</button></section>
-<section id="speakers"><h2>Speakers</h2><div class="grid"><div class="card"><h3>Rahul Mehta</h3><p>EV Engineer</p></div><div class="card"><h3>Priya Nair</h3><p>Battery Researcher</p></div><div class="card"><h3>Arun Kumar</h3><p>Mobility Consultant</p></div></div></section>
-<section id="discussions"><h2>Discussions</h2><div class="card"><h3>EV Community Forum</h3><p>Discuss EV adoption, charging infrastructure and mobility challenges.</p></div></section>
-<section id="tickets"><h2>Tickets & Registration</h2><div class="card"><h3>General Entry – Free</h3><p>Full access to the event sessions and expo.</p></div><br><form onsubmit="event.preventDefault();alert('Demo registration. Connect backend before publishing.')"><input placeholder="Full Name" required><input type="email" placeholder="Email" required><input placeholder="Organization"><select><option>General Entry</option><option>Student Entry</option></select><button class="btn">Register</button></form></section>
-<section id="sponsors"><h2>Sponsors</h2><div class="grid"><div class="card">EV Partner</div><div class="card">Battery Partner</div><div class="card">Technology Partner</div></div></section>
-<section id="venue"><h2>Venue</h2><div class="card"><p>Coimbatore, Tamil Nadu, India</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Coimbatore" target="_blank">View Map</a></div></section>
-<section id="exhibitors"><h2>Exhibitors</h2><div class="grid"><div class="card">EV Manufacturers</div><div class="card">Charging Systems</div><div class="card">Automotive Technology</div></div></section>
-<section id="gallery"><h2>Gallery</h2><div class="grid"><div class="visual">EV 01</div><div class="visual">EV 02</div><div class="visual">EV 03</div></div></section>
-<section id="signin"><h2>Sign In</h2><form onsubmit="event.preventDefault();alert('Demo sign-in. Connect authentication before publishing.')"><input type="email" placeholder="Email" required><input type="password" placeholder="Password" required><button class="btn">Sign In</button></form></section>
+<section class="wrap hero"><div class="heroText"><div class="tag">Automotive technology & mobility expo</div><h1>The next era<br>moves here.</h1><p>Discover the technologies, vehicles and ideas transforming the way the world moves.</p><a class="btn" href="#showcase">Explore the expo</a><p><b>12–14 December 2026 · Coimbatore, India</b></p></div><img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1000" alt="Electric mobility vehicle"></section>
+<section class="section" id="about"><div class="wrap"><div class="tag">01 / About the expo</div><h2>Innovation in motion.</h2><p class="lead">MOVE NEXT is an automotive technology gathering connecting mobility innovators, engineers, manufacturers, designers and enthusiasts. Explore electric vehicles, intelligent transport, connected systems and next-generation automotive solutions in one dynamic event.</p></div></section>
+<section class="section" id="agenda"><div class="wrap"><div class="tag">02 / Event programme</div><h2>Explore the agenda.</h2><div class="agenda">
+<div class="slot"><time>DAY 01 · 09:30 AM</time><h3>Opening Keynote</h3><p>Welcome and the future of connected mobility.</p></div>
+<div class="slot"><time>DAY 01 · 12:00 PM</time><h3>Electric Mobility Forum</h3><p>Developments in EV design, charging and infrastructure.</p></div>
+<div class="slot"><time>DAY 02 · 10:30 AM</time><h3>Smart Vehicle Systems</h3><p>Exploring automation, software and connected vehicles.</p></div>
+<div class="slot"><time>DAY 03 · 03:00 PM</time><h3>Mobility Innovation Showcase</h3><p>Closing highlights from the expo floor.</p></div>
+</div></div></section>
+<section class="section" id="showcase"><div class="wrap"><div class="tag">03 / Innovation zones</div><h2>Explore the future.</h2><div class="grid3">
+<article class="card"><img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600" alt="Electric vehicle"><div><h3>Electric Mobility</h3><p>Discover emerging electric vehicle concepts and charging technologies.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600" alt="Automotive technology"><div><h3>Connected Vehicles</h3><p>Explore digital systems, sensors and intelligent vehicle experiences.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600" alt="Modern automobile"><div><h3>Future Design</h3><p>See how materials, engineering and design shape tomorrow's cars.</p></div></article>
+</div></div></section>
+<section class="section"><div class="wrap"><div class="tag">04 / Supporting innovation</div><h2>Exhibitors & partners.</h2><div class="partners"><span>EV SYSTEMS</span><span>DRIVE TECH</span><span>SMART MOBILITY</span><span>NEXT AUTO LAB</span></div><p class="muted">Sample partner and exhibitor names; confirmation pending.</p></div></section>
+<section class="section"><div class="wrap"><div class="tag">05 / Speakers & guests</div><h2>People driving change.</h2><div class="people">
+<article class="person"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600" alt="Speaker portrait"><h3>Arun Menon</h3><p>Mobility Technology Specialist</p></article>
+<article class="person"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600" alt="Speaker portrait"><h3>Priya Shah</h3><p>Automotive Design Lead</p></article>
+<article class="person"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600" alt="Speaker portrait"><h3>Daniel Brooks</h3><p>EV Innovation Consultant</p></article>
+</div><p class="muted">Illustrative profiles only. Replace with confirmed speakers.</p></div></section>
+<section class="section" id="venue"><div class="wrap venue"><div><div class="tag">06 / Location</div><h2>Built for big ideas.</h2><p class="lead">The expo is planned for a modern exhibition venue in Coimbatore, Tamil Nadu, with spaces for product showcases, technical sessions and industry networking.</p><p class="muted">Venue name and address: To be confirmed.</p></div><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900" alt="Modern convention building"></div></section>
+<section class="section"><div class="wrap"><div class="tag">07 / Expo gallery</div><h2>Innovation in pictures.</h2><div class="gallery"><img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=700" alt="Electric car"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=500" alt="Vehicle"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=500" alt="Car"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500" alt="Sports car"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=500" alt="Automobile"></div></div></section>
 </main>
-<footer><p>© 2026 Aram Events. All rights reserved.</p><a href="#home">Terms & Policies</a> <a href="#home">Privacy</a> <a href="#home">Social Handles</a></footer>
+<footer id="contact"><div class="wrap"><h2>Connect with MOVE NEXT.</h2><p>General enquiries: hello@movenext.example</p><p>Coimbatore, Tamil Nadu, India · Event information subject to confirmation.</p><p>© 2026 MOVE NEXT Automotive Technology Expo.</p></div></footer>
 </body>
 </html>

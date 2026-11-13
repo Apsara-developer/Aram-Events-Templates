@@ -2,141 +2,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Creative Canvas | Aram Events</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Executive Room | Leadership Summit</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:#fffaf5;color:#29251f}
-nav{display:flex;justify-content:space-between;align-items:center;padding:22px 7%;background:#fff}
-.logo{font-size:23px;font-weight:900;color:#b34e39}
-nav a{color:#333;text-decoration:none;margin-left:20px;font-size:14px}
-.hero{padding:100px 8%;background:#f0d9c8;position:relative}
-.hero small{letter-spacing:4px;color:#a34e39;font-weight:bold}
-.hero h1{font-family:Georgia;font-size:clamp(48px,8vw,90px);line-height:1.05;margin:25px 0}
-.hero p{max-width:550px;line-height:1.8;color:#68574c}
-.btn{display:inline-block;background:#b34e39;color:white;padding:15px 27px;text-decoration:none;margin-top:25px}
-section{padding:75px 8%}
-.section-title{font:42px Georgia;margin-bottom:20px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-.about p{line-height:1.9;color:#70665f}
-.artbox{height:350px;background:linear-gradient(135deg,#b34e39,#e9a77e,#e7c6a8);display:grid;place-items:center;color:white;font:italic 55px Georgia}
-.agenda{background:#29251f;color:white}
-.agenda p{color:#ddd}
-.schedule{margin-top:30px}
-.item{padding:22px 0;border-bottom:1px solid #665c54;display:flex;gap:35px}
-.item strong{color:#efa47d;min-width:100px}
-.artists{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
-.artist{height:220px;background:linear-gradient(135deg,#9d5347,#d7a28b);display:flex;align-items:end;padding:20px;color:white;font-size:20px}
-.artist:nth-child(2){background:linear-gradient(135deg,#465b54,#9db6a0)}
-.artist:nth-child(3){background:linear-gradient(135deg,#69506f,#c29bbd)}
-.tickets{background:#f0d9c8;text-align:center}
-.ticket{background:white;max-width:420px;margin:30px auto;padding:35px;border-radius:10px}
-.ticket h3{font:30px Georgia;margin-bottom:15px}
-.ticket button{border:0;background:#b34e39;color:white;padding:14px 28px;margin-top:20px;cursor:pointer}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}
-.gallery div{height:180px;background:linear-gradient(135deg,#b34e39,#edbd91)}
-.gallery div:nth-child(2){background:linear-gradient(135deg,#455d53,#a8bd9d)}
-.gallery div:nth-child(3){background:linear-gradient(135deg,#78617f,#d5a9c3)}
-.gallery div:nth-child(4){background:linear-gradient(135deg,#c18b48,#f0d09a)}
-.gallery div:nth-child(5){background:linear-gradient(135deg,#475a77,#a0b5d0)}
-.gallery div:nth-child(6){background:linear-gradient(135deg,#9a5744,#e8a58a)}
-footer{background:#29251f;color:white;text-align:center;padding:40px}
-footer p{margin-top:12px;color:#c9bdb3}
-@media(max-width:700px){
-nav{flex-wrap:wrap;gap:15px}
-nav div:last-child{display:flex;flex-wrap:wrap;gap:12px}
-nav a{margin:0}
-.about{grid-template-columns:1fr}
-.artists{grid-template-columns:1fr}
-.gallery{grid-template-columns:repeat(2,1fr)}
-.item{gap:15px}
-}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#10100f;color:#eee8dc;font-family:Montserrat,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,90%);margin:auto}header{padding:25px 0;border-bottom:1px solid #393329}.nav{display:flex;justify-content:space-between;align-items:center}.logo{font:600 21px Cinzel;letter-spacing:3px;color:#c6a46a}.links{display:flex;gap:19px;font-size:10px;letter-spacing:1px;text-transform:uppercase}.hero{min-height:610px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(10,10,10,.95),rgba(10,10,10,.5)),url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1500') center/cover}.hero .wrap{padding:90px 0}.tag{color:#c6a46a;font-size:10px;letter-spacing:3px;text-transform:uppercase}.hero h1{font:500 clamp(52px,8vw,94px)/1.1 Cinzel;margin:25px 0}.hero p,.lead{color:#c0b9ae;font-size:14px;line-height:1.9;max-width:650px}.btn{display:inline-block;border:1px solid #c6a46a;color:#c6a46a;padding:15px 23px;margin-top:20px;font-size:10px;letter-spacing:2px;text-transform:uppercase}.section{padding:75px 0;border-top:1px solid #393329}.section h2{font:500 clamp(35px,5vw,58px) Cinzel;margin:15px 0 25px}.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.two img{width:100%;height:350px;object-fit:cover;filter:brightness(.8)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#1c1b18;border:1px solid #373127}.card img{width:100%;height:230px;object-fit:cover;filter:brightness(.85)}.card div{padding:20px}.card h3{font:500 21px Cinzel;color:#d1b17c}.card p,.muted{font-size:12px;line-height:1.8;color:#aaa398}.slot{display:grid;grid-template-columns:130px 1fr;padding:22px 0;border-bottom:1px solid #393329}.slot time{color:#c6a46a;font-size:11px}.slot h3{margin:0 0 7px;font:500 20px Cinzel}.slot p{margin:0;color:#aaa398;font-size:12px}.partners{display:flex;flex-wrap:wrap;gap:30px;color:#c6a46a;font:500 18px Cinzel}.venuebox{padding:30px;background:#1c1b18;border-left:2px solid #c6a46a}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.gallery img{width:100%;height:190px;object-fit:cover;filter:brightness(.8)}.gallery img:first-child{grid-column:span 2;grid-row:span 2;height:390px}footer{background:#c6a46a;color:#10100f;padding:45px 0}footer p{font-size:12px;line-height:1.8}@media(max-width:750px){.links{display:none}.hero{min-height:530px}.two{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.slot{grid-template-columns:90px 1fr}.gallery{grid-template-columns:1fr 1fr}.gallery img:first-child{grid-column:span 2;grid-row:auto;height:220px}}
 </style>
 </head>
 <body>
-
-<nav>
-<div class="logo">ARAM EVENTS ✦</div>
-<div>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#agenda">Agenda</a>
-<a href="#artists">Artists</a>
-<a href="#tickets">Tickets</a>
-</div>
-</nav>
-
-<header class="hero" id="home">
-<small>ART · DESIGN · CREATIVITY</small>
-<h1>Creative<br>Canvas 2026.</h1>
-<p>A celebration of imagination, visual arts and creative expression. Meet artists, explore inspiring exhibitions and discover new perspectives.</p>
-<a class="btn" href="#tickets">Register Now →</a>
-</header>
-
-<section id="about" class="about">
-<div>
-<h2 class="section-title">Where Creativity Comes Alive.</h2>
-<p>Creative Canvas brings together artists, photographers, designers and creative thinkers for an unforgettable experience. Explore original artwork, attend inspiring sessions and connect with the creative community.</p>
-</div>
-<div class="artbox">Imagine More.</div>
-</section>
-
-<section class="agenda" id="agenda">
-<h2 class="section-title">Event Agenda</h2>
-<p>Discover what's happening throughout the day.</p>
-<div class="schedule">
-<div class="item"><strong>09:00 AM</strong><span>Registration & Welcome</span></div>
-<div class="item"><strong>10:00 AM</strong><span>Opening Art Exhibition</span></div>
-<div class="item"><strong>11:30 AM</strong><span>Creative Design Workshop</span></div>
-<div class="item"><strong>01:00 PM</strong><span>Artist Networking Lunch</span></div>
-<div class="item"><strong>02:30 PM</strong><span>Photography Masterclass</span></div>
-<div class="item"><strong>04:00 PM</strong><span>Closing Celebration</span></div>
-</div>
-</section>
-
-<section id="artists">
-<h2 class="section-title">Featured Artists</h2>
-<p>Meet the creative minds behind the inspiration.</p>
-<div class="artists">
-<div class="artist">Visual Artists</div>
-<div class="artist">Creative Designers</div>
-<div class="artist">Photographers</div>
-</div>
-</section>
-
-<section class="tickets" id="tickets">
-<h2 class="section-title">Be Part of the Canvas.</h2>
-<p>Reserve your place at Creative Canvas 2026.</p>
-<div class="ticket">
-<h3>General Admission</h3>
-<p>Access to exhibitions, workshops and networking.</p>
-<h2>₹499</h2>
-<button onclick="alert('Registration selected! Connect your registration form to accept bookings.')">Register Now</button>
-</div>
-</section>
-
-<section id="gallery">
-<h2 class="section-title">Creative Gallery</h2>
-<p>A glimpse into art, colour and imagination.</p>
-<div class="gallery">
-<div></div><div></div><div></div>
-<div></div><div></div><div></div>
-</div>
-</section>
-
-<section>
-<h2 class="section-title">Venue & Location</h2>
-<p>Creative Arts Convention Centre</p>
-<p>Coimbatore, Tamil Nadu, India</p>
-</section>
-
-<footer>
-<h2>ARAM EVENTS</h2>
-<p>Creative Canvas 2026 · Art & Photos Collection</p>
-<p>© 2026 Aram Events. All Rights Reserved.</p>
-</footer>
-
+<header><div class="wrap nav"><a class="logo" href="#">THE EXECUTIVE ROOM</a><nav class="links"><a href="#about">Vision</a><a href="#agenda">Programme</a><a href="#speakers">Leaders</a><a href="#partners">Partners</a><a href="#venue">Location</a><a href="#contact">Contact</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap"><div class="tag">An executive leadership gathering · 2026</div><h1>Leadership<br>Beyond Limits.</h1><p>A distinguished business summit exploring executive leadership, strategic thinking, corporate transformation and the future of global enterprise.</p><a class="btn" href="#about">Discover the summit</a><p>12 December 2026 &nbsp; | &nbsp; Coimbatore, India</p></div></section>
+<section class="section" id="about"><div class="wrap two"><div><div class="tag">01 / The vision</div><h2>Excellence begins with perspective.</h2><p class="lead">The Executive Room is a premium leadership gathering designed around meaningful discussions, forward-thinking strategies and the exchange of professional perspectives. It explores the decisions, values and innovations that shape successful organisations.</p></div><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900" alt="Executive meeting space"></div></section>
+<section class="section" id="agenda"><div class="wrap"><div class="tag">02 / The programme</div><h2>A considered agenda.</h2>
+<div class="slot"><time>09:00 AM</time><div><h3>Opening Leadership Address</h3><p>Welcome and the evolving role of executive leadership.</p></div></div>
+<div class="slot"><time>10:30 AM</time><div><h3>Strategic Decision Making</h3><p>Building long-term organisational value.</p></div></div>
+<div class="slot"><time>01:00 PM</time><div><h3>Corporate Transformation</h3><p>Leading change through innovation and technology.</p></div></div>
+<div class="slot"><time>03:30 PM</time><div><h3>The Future of Enterprise</h3><p>Executive perspectives and closing discussion.</p></div></div>
+</div></section>
+<section class="section" id="speakers"><div class="wrap"><div class="tag">03 / Distinguished voices</div><h2>Leadership perspectives.</h2><div class="cards">
+<article class="card"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600" alt="Executive portrait"><div><h3>Vivek Anand</h3><p>Corporate Strategy Advisor</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600" alt="Executive portrait"><div><h3>Elena Morris</h3><p>Global Business Consultant</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600" alt="Executive portrait"><div><h3>Rohan Kapoor</h3><p>Enterprise Leadership Specialist</p></div></article>
+</div><p class="muted">Sample profiles; actual speakers to be confirmed.</p></div></section>
+<section class="section" id="partners"><div class="wrap"><div class="tag">04 / Strategic alliances</div><h2>Our partners.</h2><div class="partners"><span>MERIDIAN GROUP</span><span>GLOBAL EDGE</span><span>PRIME BUSINESS</span><span>LEADERS NETWORK</span></div><p class="muted">Illustrative partner names only.</p></div></section>
+<section class="section" id="venue"><div class="wrap two"><div><div class="tag">05 / Venue</div><h2>An exceptional setting.</h2><div class="venuebox"><p class="lead">The summit is planned for a premium conference venue in Coimbatore, Tamil Nadu, designed to host executive presentations and professional conversations.</p><p class="muted">Final venue name and address to be confirmed.</p></div></div><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900" alt="Premium corporate venue"></div></section>
+<section class="section"><div class="wrap"><div class="tag">06 / Atmosphere</div><h2>Summit gallery.</h2><div class="gallery"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=700" alt="Conference"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=500" alt="Meeting"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=500" alt="Corporate event"><img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500" alt="Speaker"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=500" alt="Business discussion"></div></div></section>
+</main>
+<footer id="contact"><div class="wrap"><h2 style="font:36px Cinzel">THE EXECUTIVE ROOM</h2><p>General enquiries: hello@executiveroom.example</p><p>Coimbatore, Tamil Nadu, India · Details subject to confirmation.</p><p>© 2026 The Executive Room.</p></div></footer>
 </body>
 </html>

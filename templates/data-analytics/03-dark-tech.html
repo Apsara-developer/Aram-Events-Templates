@@ -2,79 +2,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Data After Dark | Aram Events</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:#101820;color:#f2f5f3;font-family:Arial}
-header{padding:22px 5%;display:flex;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid #3a514b}
-.logo{color:#9be564;font-size:22px;font-weight:bold}
-nav{display:flex;gap:12px;flex-wrap:wrap}
-nav a{color:white;text-decoration:none;font-size:12px}
-.hero{padding:100px 9%;background:radial-gradient(circle at 80% 20%,#29463c,#111b24 60%)}
-.hero h1{font-size:75px;line-height:1.05;color:#9be564}
-.hero p{max-width:650px}
-.btn{background:#9be564;color:#142019;padding:14px 23px;border:0;cursor:pointer;text-decoration:none;display:inline-block;margin:10px 5px 10px 0}
-.secondary{background:transparent;color:#9be564;border:1px solid #9be564}
-section{padding:55px 9%;border-bottom:1px solid #3a514b}
-h2{color:#9be564;font-size:35px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:#1c2b32;padding:25px;border:1px solid #3a514b;border-radius:8px}
-.card p{color:#c2d0ca}
-.session{padding:18px;border-bottom:1px solid #3a514b}
-form{display:grid;gap:12px;max-width:450px}
-input,select{padding:14px;background:#1c2b32;color:white;border:1px solid #53645d}
-footer{background:#080e12;padding:30px;text-align:center;color:#d9e3df}
-@media(max-width:700px){.grid{grid-template-columns:1fr}.hero h1{font-size:46px}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#080e13;color:#e9f5f2;font-family:Inter,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,90%);margin:auto}header{background:#0b141b;border-bottom:1px solid #243b42;padding:23px 0}.nav{display:flex;justify-content:space-between;align-items:center}.logo{font:600 17px Orbitron;color:#6fffc2;letter-spacing:2px}.links{display:flex;gap:17px;font-size:10px;text-transform:uppercase;letter-spacing:1px}.hero{padding:105px 0;background:linear-gradient(90deg,#080e13f5,#080e1390),url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1500') center/cover}.tag{color:#6fffc2;font-size:11px;letter-spacing:3px;text-transform:uppercase}.hero h1{font:700 clamp(48px,8vw,88px)/1.1 Orbitron;letter-spacing:-3px;margin:25px 0}.hero p,.lead{font-size:14px;line-height:1.9;color:#afc5c1;max-width:650px}.btn{display:inline-block;background:#6fffc2;color:#07130f;padding:15px 23px;margin-top:20px;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase}.section{padding:75px 0;border-bottom:1px solid #243b42}.section h2{font:600 clamp(34px,5vw,52px) Orbitron;line-height:1.25;margin:18px 0 25px}.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.two img{width:100%;height:360px;object-fit:cover;filter:brightness(.75);border:1px solid #355a51}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:#111e25;border:1px solid #29473e}.card img{width:100%;height:220px;object-fit:cover;filter:brightness(.8)}.card div{padding:20px}.card h3{color:#6fffc2;margin:0 0 8px}.card p,.muted{font-size:13px;color:#9db3ad;line-height:1.8}.slot{display:grid;grid-template-columns:140px 1fr;padding:22px 0;border-bottom:1px solid #29473e}.slot time{color:#6fffc2;font-size:12px;font-weight:700}.slot h3{margin:0 0 7px}.slot p{font-size:13px;color:#9db3ad;margin:0}.partners{display:flex;flex-wrap:wrap;gap:15px}.partners span{border:1px solid #47775f;color:#6fffc2;padding:22px;font:12px Orbitron}.venue{padding:28px;background:#111e25;border-left:3px solid #6fffc2}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.gallery img{width:100%;height:210px;object-fit:cover;filter:brightness(.8)}footer{background:#6fffc2;color:#07130f;padding:45px 0}footer p{font-size:13px;line-height:1.8}@media(max-width:750px){.links{display:none}.hero{padding:75px 0}.hero h1{letter-spacing:-2px}.two{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.slot{grid-template-columns:100px 1fr}.gallery{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
-<header><div class="logo">ARAM EVENTS</div><nav>
-<a href="#home">Home</a><a href="#agenda">Agenda</a><a href="#speakers">Speakers</a><a href="#discussions">Discussions</a><a href="#tickets">Tickets</a><a href="#sponsors">Sponsors</a><a href="#venue">Venue</a><a href="#exhibitors">Exhibitors</a><a href="#gallery">Gallery</a><a href="#signin">Sign In</a>
-</nav></header>
-<div class="hero" id="home">
-<p>FUTURE SYSTEMS · AI · BIG DATA</p>
-<h1>Think Beyond<br>the Numbers.</h1>
-<p>A bold forum for exploring advanced analytics, intelligent systems and the next wave of data innovation.</p>
-<a class="btn" href="#tickets">Get Access</a>
-<p>12 December 2026 | Coimbatore, India</p>
-</div>
-<section id="about"><h2>About Data After Dark</h2><p>Discover the technologies shaping tomorrow's data landscape. Connect with innovators working in big data, artificial intelligence and intelligent systems.</p></section>
-<section id="agenda"><h2>Event Timeline</h2>
-<div class="session">09:00 AM — Opening Experience</div>
-<div class="session">10:00 AM — The Future of Big Data</div>
-<div class="session">11:30 AM — Intelligent AI Systems</div>
-<div class="session">01:30 PM — Data Security & Ethics</div>
-<div class="session">03:00 PM — Innovation Lab</div>
-<button class="btn" onclick="alert('Connect calendar integration before publishing.')">Add to Calendar</button>
-<button class="btn secondary" onclick="window.print()">Print Agenda</button>
-</section>
-<section id="speakers"><h2>Featured Experts</h2><div class="grid">
-<div class="card"><h3>Vikram Menon</h3><p>AI Architect</p></div>
-<div class="card"><h3>Neha Rao</h3><p>Data Engineering Lead</p></div>
-<div class="card"><h3>Karthik Iyer</h3><p>Technology Researcher</p></div>
+<header><div class="wrap nav"><a class="logo" href="#">DATA / AFTER DARK</a><nav class="links"><a href="#about">About</a><a href="#agenda">Schedule</a><a href="#speakers">Speakers</a><a href="#partners">Partners</a><a href="#venue">Venue</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap"><div class="tag">Advanced analytics · AI · Emerging technology</div><h1>THE FUTURE<br>IS DATA.</h1><p>An immersive technology gathering exploring artificial intelligence, big data, machine learning, cloud analytics and the systems powering tomorrow's digital world.</p><a class="btn" href="#about">Explore the experience</a><p>16 December 2026 &nbsp; | &nbsp; Coimbatore, India</p></div></section>
+<section class="section" id="about"><div class="wrap two"><div><div class="tag">01 / The experience</div><h2>Decode what comes next.</h2><p class="lead">Data After Dark is a future-focused event for data engineers, AI researchers, analytics professionals and technology enthusiasts. Explore intelligent automation, scalable data systems, machine learning and emerging technology through expert presentations and discussions.</p></div><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900" alt="Advanced computing technology"></div></section>
+<section class="section" id="agenda"><div class="wrap"><div class="tag">02 / Event sequence</div><h2>Ideas. Systems. Intelligence.</h2>
+<div class="slot"><time>09:00 AM</time><div><h3>Opening: Beyond Traditional Analytics</h3><p>Introducing the new generation of data ecosystems.</p></div></div>
+<div class="slot"><time>10:30 AM</time><div><h3>Machine Learning in Production</h3><p>From experimental models to practical applications.</p></div></div>
+<div class="slot"><time>01:30 PM</time><div><h3>Cloud Data & Big Data Engineering</h3><p>Building reliable and scalable data infrastructure.</p></div></div>
+<div class="slot"><time>03:30 PM</time><div><h3>AI Systems of Tomorrow</h3><p>Emerging possibilities and responsible innovation.</p></div></div>
 </div></section>
-<section id="discussions"><h2>Tech Discussion Zones</h2><div class="grid">
-<div class="card"><h3>Big Data</h3><p>Large-scale data processing.</p></div>
-<div class="card"><h3>Artificial Intelligence</h3><p>Intelligent systems and applications.</p></div>
-<div class="card"><h3>Cyber Data Security</h3><p>Protecting information and privacy.</p></div>
-</div></section>
-<section id="tickets"><h2>Access Passes</h2><div class="grid">
-<div class="card"><h3>Standard</h3><p>₹499</p></div>
-<div class="card"><h3>Professional</h3><p>₹999</p></div>
-<div class="card"><h3>VIP</h3><p>₹1499</p></div>
-</div>
-<form onsubmit="event.preventDefault();alert('Demo registration only. Connect your backend before publishing.')">
-<input required placeholder="Full Name"><input required type="email" placeholder="Email">
-<select><option>Standard Pass</option><option>Professional Pass</option><option>VIP Pass</option></select>
-<button class="btn">Reserve Your Place</button>
-</form></section>
-<section id="sponsors"><h2>Technology Partners</h2><div class="grid"><div class="card">AI Partner</div><div class="card">Cloud Partner</div><div class="card">Innovation Partner</div></div></section>
-<section id="venue"><h2>Event Location</h2><p>Coimbatore, Tamil Nadu, India</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Coimbatore">View Venue</a></section>
-<section id="exhibitors"><h2>Technology Showcase</h2><div class="grid"><div class="card">AI Technologies</div><div class="card">Cloud Platforms</div><div class="card">Big Data Solutions</div></div></section>
-<section id="gallery"><h2>Event Highlights</h2><div class="grid"><div class="card">EXPLORE</div><div class="card">BUILD</div><div class="card">INNOVATE</div></div></section>
-<section id="signin"><h2>Attendee Sign In</h2><form onsubmit="event.preventDefault();alert('Demo sign-in only.')"><input type="email" required placeholder="Email"><input type="password" required placeholder="Password"><button class="btn">Sign In</button></form></section>
-<footer>© 2026 Aram Events | Terms & Policies | Privacy Policy</footer>
+<section class="section" id="speakers"><div class="wrap"><div class="tag">03 / Featured minds</div><h2>Meet the technology voices.</h2><div class="cards">
+<article class="card"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600" alt="Speaker"><div><h3>Alex Morgan</h3><p>AI Systems Architect</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600" alt="Speaker"><div><h3>Ananya Rao</h3><p>Machine Learning Researcher</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600" alt="Speaker"><div><h3>Ryan Thomas</h3><p>Data Engineering Lead</p></div></article>
+</div><p class="muted">Illustrative speaker profiles; actual lineup to be announced.</p></div></section>
+<section class="section" id="partners"><div class="wrap"><div class="tag">04 / Technology ecosystem</div><h2>Powered by innovation.</h2><div class="partners"><span>NEURAL LAB</span><span>DATA CORE</span><span>CLOUD GRID</span><span>AI FRONTIER</span></div><p class="muted">Concept partner names for the design.</p></div></section>
+<section class="section" id="venue"><div class="wrap two"><div><div class="tag">05 / Location</div><h2>A space for next-generation ideas.</h2><div class="venue"><b>Coimbatore, Tamil Nadu, India</b><p class="lead">A modern technology conference environment planned for expert sessions, presentations and networking.</p><p class="muted">Final venue details to be confirmed.</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Coimbatore" target="_blank" rel="noopener">View location</a></div></div><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900" alt="Technology event space"></div></section>
+<section class="section" id="gallery"><div class="wrap"><div class="tag">06 / Event visuals</div><h2>Inside the data universe.</h2><div class="gallery"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500" alt="Technology"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Analytics"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500" alt="Discussion"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500" alt="Conference"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500" alt="Technology team"><img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500" alt="Presentation"></div></div></section>
+</main>
+<footer id="contact"><div class="wrap"><h2 style="font-family:Orbitron">DATA / AFTER DARK</h2><p>General enquiries: hello@dataafterdark.example</p><p>Coimbatore, Tamil Nadu, India</p><p>© 2026 Data After Dark. All rights reserved.</p></div></footer>
 </body>
 </html>
