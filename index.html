@@ -436,7 +436,7 @@ header {
     text-decoration: underline;
 }
 
-/* NEW: EDIT WEBSITE LINK */
+/* EDIT WEBSITE LINK */
 
 .edit-link {
     color: #16a36a;
@@ -1003,8 +1003,9 @@ function renderTemplates() {
             const description = template[2];
             const designType = template[3];
 
+            // FIX 1: USE ABSOLUTE TEMPLATE PATHS
             const path =
-                `./templates/${category.folder}/${fileName}`;
+                `/templates/${category.folder}/${fileName}`;
 
             const card = document.createElement("article");
 
@@ -1076,14 +1077,14 @@ function renderTemplates() {
                 "Open " + templateName + " website in a new tab"
             );
 
-            /* NEW: EDIT WEBSITE LINK */
+            /* EDIT WEBSITE LINK */
 
             const editLink = document.createElement("a");
 
             editLink.className = "edit-link";
 
             editLink.href =
-                "./editor.html?template=" + encodeURIComponent(path);
+                "/editor.html?template=" + encodeURIComponent(path);
 
             editLink.textContent = "Edit Website ✎";
 
@@ -1162,9 +1163,10 @@ function filterTemplates() {
 
         const category = section.dataset.category;
 
+        // FIX 2: CASE-INSENSITIVE CATEGORY MATCHING
         const matchesCategory =
             selectedCategory === "all" ||
-            category === selectedCategory;
+            category.toLowerCase() === selectedCategory.toLowerCase();
 
         let visible = 0;
 
